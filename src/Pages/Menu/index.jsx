@@ -77,6 +77,12 @@ function Menu() {
         navigateToReporteCatastral, 
         navigateToReporteDane,
         //navigateToReportes,
+        navigateToStock,
+        navigateToUbicaciones,
+        navigateToFabricantes,
+        navigateToProveedores,
+        navigateToPiezas,
+        navigateToOrdenesDeCompra
     } = useNavigateProvider()
 
     const  userType  = getDataUser(); // ✅ Se obtiene el tipo de usuario
@@ -103,7 +109,7 @@ function Menu() {
         setToken(localStorage.getItem('token'))
     }, [])
 
-    const menu = [
+    const menuOriginal = [
         {id: 1, name: 'Nueva Radicación', trigger: navigateToNuevaRadicacion, icon: nuevaradicacionicon},
         {id: 2, name: 'Otras Actuaciones', trigger: () => setOpenMenuOtrasActuaciones(true), icon: otrasactuacionesicon},
         {id: 3, name: 'Requisitos', trigger: navigateToListadoRadicacionesRequisitos, icon: requisitosicon},
@@ -123,6 +129,15 @@ function Menu() {
         {id: 17, name: 'Acto Administrativo', trigger: navigateToSearchAdministrativeAct, icon: actoadministrativoicon},
         {id: 18, name: 'Reportes', trigger: () => setOpenModalReportes(true), icon: reportesicon},
         
+    ];
+
+    const menu = [
+        {id: 2, name: 'Stock', trigger: navigateToStock, icon: otrasactuacionesicon},
+        {id: 3, name: 'Ubicaciones', trigger: navigateToUbicaciones, icon: requisitosicon},
+        {id: 4, name: 'Fabricantes', trigger: navigateToFabricantes, icon: predioicon},
+        {id: 5, name: 'Proveedores', trigger: navigateToProveedores, icon: titularesicon},
+        {id: 6, name: 'Piezas', trigger: navigateToPiezas, icon: responsablesicon}, 
+        {id: 7, name: 'Ordenes de compra', trigger: navigateToOrdenesDeCompra, icon: responsablesicon}, 
     ];
 
     function handleNavigateToReportesCatastral() {

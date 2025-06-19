@@ -119,6 +119,15 @@ function useNavigateProvider() {
     const navigateToOtrasActuacionesListadoHistorias = () => {navigate('/otras-actuaciones-listado-historias')}
 
 
+    //navegacion para mvp de inventarios
+    const navigateToStock = () => {navigate('/stock')}
+    const navigateToUbicaciones = () => {navigate('/ubicaciones')}
+    const navigateToFabricantes = () => {navigate('/fabricantes')}
+    const navigateToProveedores = () => {navigate('/proveedores')}
+    const navigateToPiezas = () => {navigate('/piezas')}
+    const navigateToOrdenesDeCompra = () => {navigate('/ordenes-de-compra')}
+
+
     return {
         navigateToNuevaRadicacion,
         navigateToMenu,
@@ -181,7 +190,13 @@ function useNavigateProvider() {
         navigateToOtrasActuacionesListadoTitulares,
         navigateToBuscadorDeOtrosActosHistorias,
         navigateToOtrasActuacionesListadoHistorias,
-        navigateToReporteDane
+        navigateToReporteDane,
+        navigateToStock,
+        navigateToUbicaciones,
+        navigateToFabricantes,
+        navigateToProveedores,
+        navigateToPiezas,
+        navigateToOrdenesDeCompra
     }
 }
 

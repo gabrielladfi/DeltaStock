@@ -11,7 +11,12 @@ function MenuConfiguraciones() {
 
     const { 
         navigateToConfiguracion,
-        navigateToMenuLiquidaciones
+        navigateToStock,
+        navigateToUbicaciones,
+        navigateToFabricantes,
+        navigateToProveedores,
+        navigateToPiezas,
+        navigateToOrdenesDeCompra
     } = useNavigateProvider()
 
     function navigateConfiguracion(parametro) {
@@ -27,18 +32,18 @@ function MenuConfiguraciones() {
     return (
         <div className='menuconfiguraciones'>
             <div className='menuconfiguraciones__header--closer'>
-                <h1 className='menuconfiguraciones__header--closer__title'>Configuraciones</h1>
+                <h1 className='menuconfiguraciones__header--closer__title'>Menú de Inventarios</h1>
                 <button onClick={() => setIsOpenMenuConfiguracion(false)} className='menuconfiguraciones__header--closer__button'>
                     <XMarkIcon className='menuconfiguraciones__header--closer__button__icon' />
                 </button>
             </div>
             <div className='menuconfiguraciones__body'>
-                <button onClick={() => navigateConfiguracion('cimentacion')} className='menuconfiguraciones__body__button'>Cimentación</button>
-                <button onClick={() => navigateConfiguracion('codigoCIIU')} className='menuconfiguraciones__body__button'>Codigo CIIU</button>
-                <button onClick={() => navigateConfiguracion('diseno')} className='menuconfiguraciones__body__button'>Diseño</button>
-                <button onClick={() => navigateConfiguracion('estructuras')} className='menuconfiguraciones__body__button'>Estructuras</button>
-                <button onClick={handleravigateToMenuLiquidaciones} className='menuconfiguraciones__body__button'>Liquidaciones y Expensas</button>
-                <button onClick={() => navigateConfiguracion('sismico')} className='menuconfiguraciones__body__button'>Sismico</button>
+                <button onClick={navigateToStock} className='menuconfiguraciones__body__button'>Stock</button>
+                <button onClick={navigateToUbicaciones} className='menuconfiguraciones__body__button'>Ubicaciones</button>
+                <button onClick={navigateToFabricantes} className='menuconfiguraciones__body__button'>Fabricantes</button>
+                <button onClick={navigateToProveedores} className='menuconfiguraciones__body__button'>Proveedores</button>
+                <button onClick={navigateToPiezas} className='menuconfiguraciones__body__button'>Piezas</button>
+                <button onClick={navigateToOrdenesDeCompra} className='menuconfiguraciones__body__button'>Ordenes de compra</button>
             </div>
         </div>  
     )

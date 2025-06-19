@@ -6,6 +6,7 @@ import './navbarmobilebottom.scss'
 import { useNavigateProvider } from '@/Hooks/useNavigateProvider'
 import { useContext } from 'react'
 import { GlobalState } from '@/Context/GlobalContext'
+import { Bars3Icon, HomeIcon } from '@heroicons/react/24/outline'
 
 NavBarMobilebottom.propTypes = {
     initialLetter: PropTypes.string.isRequired,
@@ -21,15 +22,13 @@ function NavBarMobilebottom({ initialLetter }) {
 
     return (
         <nav className='navbarmobilebottom'>
-            <button onClick={navigateToNuevaRadicacion} className='navbarmobilebottom__button'>
-                <img src={fileicon} alt="fileicon" />
-            </button>
-            <button onClick={() => setIsOpenMenuConsultas(true)} className='navbarmobilebottom__button'>
-                <img src={papericon} alt="papericon" />
-            </button>
             <button onClick={() => setIsOpenMenuConfiguracion(true)} className='navbarmobilebottom__button'>
-                <img src={machineicon} alt="machineicon" />
+                <Bars3Icon className='navbarmobilebottom__button__icon' />
             </button>
+            <button onClick={navigateToNuevaRadicacion} className='navbarmobilebottom__button'>
+                <HomeIcon className='navbarmobilebottom__button__icon' />
+            </button>
+            
             <button className='navbarmobilebottom__button--perfil'>
                 { initialLetter }
             </button>

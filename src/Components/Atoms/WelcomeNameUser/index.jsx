@@ -13,7 +13,7 @@ function WelcomeNameUser({ nameUser }) {
         <section className='welcomenameuser'>
             <p className='welcomenameuser__p'>Bienvenido, {nameUser}</p>
             <article className='welcomenameuser__article'>
-                <p className='welcomenameuser__article__p'>Accede a cada módulo y lleva el control completo de tus trámites</p>
+                <p className='welcomenameuser__article__p'>Accede a cada módulo y lleva el control completo de tus Inventarios</p>
                 <img className='welcomenameuser__article__img' src={imagenprofesional} alt="imagen profesional" />
                 <img className='welcomenameuser__article__img--desktop' src={imagenprofesionaldesktop} alt="imagen profesional-desktop" />
                 <img className='welcomenameuser__article__img--tablet' src={imagenprofesionaltablet} alt="imagen profesional-tablet" />

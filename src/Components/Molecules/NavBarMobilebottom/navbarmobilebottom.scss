@@ -28,9 +28,10 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        img {
-            width: 1.5rem;
-            height: 1.5rem;
+        &__icon {
+            width: 2rem;
+            height: 2rem;
+            color: $primary-color;
         }
     }
     &__button--perfil {

@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { ChevronDownIcon, ChevronUpIcon, FolderMinusIcon, DocumentTextIcon, Cog6ToothIcon, HomeIcon } from '@heroicons/react/24/outline';
+import { ChevronDownIcon, ChevronUpIcon, FolderMinusIcon, DocumentTextIcon, Cog6ToothIcon, HomeIcon, ClipboardDocumentListIcon, CpuChipIcon, UsersIcon, WrenchScrewdriverIcon, CircleStackIcon, GlobeAmericasIcon } from '@heroicons/react/24/outline';
 import './menuvertical.scss'
 import { useNavigateProvider } from '@/Hooks/useNavigateProvider';
 import { GlobalState } from '@/Context/GlobalContext';
@@ -14,7 +14,13 @@ function MenuVertical() {
         navigateToMenu, 
         navigateToBuscadorDeExpedientes, 
         navigateToConfiguracion, 
-        navigateToMenuLiquidaciones 
+        navigateToMenuLiquidaciones,
+        navigateToStock,
+        navigateToUbicaciones,
+        navigateToFabricantes,
+        navigateToProveedores,
+        navigateToPiezas,
+        navigateToOrdenesDeCompra
     } = useNavigateProvider()
 
     function navigateConfiguracion(parametro) {
@@ -36,34 +42,54 @@ function MenuVertical() {
             label: 'Menu Principal',
             subOptions: [],
             disabled: true,
+            fn: () => navigateToMenu(),
         },
-        {   
-            icon: <FolderMinusIcon className='MenuVertical__icon' />,
-            label: 'Radicación',
+        {
+            icon: < Cog6ToothIcon className='MenuVertical__icon' />,
+            label: 'Fabricantes',
             subOptions: [],
             disabled: true,
+            fn: () => navigateToFabricantes(),
         },
         {
-            icon: <DocumentTextIcon className='MenuVertical__icon' />,
-            label: 'Consultas',
-            subOptions: [
-                { label: 'Busqueda por expedientes', fn: () => navigateToBuscadorDeExpedientes() },
-            ],
-            disabled: false,
+            icon: <ClipboardDocumentListIcon className='MenuVertical__icon' />,
+            label: 'Ordenes de compra',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToOrdenesDeCompra(),
         },
         {
-            icon: <Cog6ToothIcon className='MenuVertical__icon' />,
-            label: 'Configuración',
-            subOptions: [
-                { label: 'Cimentación', fn: () => navigateConfiguracion('cimentacion') },
-                { label: 'Estructuras', fn: () => navigateConfiguracion('estructura') },
-                { label: 'Diseño', fn: () => navigateConfiguracion('diseño') },
-                { label: 'Sismico', fn: () => navigateConfiguracion('sismico') },
-                { label: 'Liquidaciones y expensas', fn: () => navigateToMenuLiquidaciones() },
-                { label: 'Código CIIU', fn: () => navigateConfiguracion('codigoCIIU') },
-            ],
-            disabled: false,
+            icon: <WrenchScrewdriverIcon className='MenuVertical__icon' />,
+            label: 'Piezas',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToPiezas(),
         },
+        {
+            icon: <UsersIcon className='MenuVertical__icon' />,
+            label: 'Proveedores',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToProveedores(),
+        },
+        {
+            icon: <CircleStackIcon className='MenuVertical__icon' />,
+            label: 'Stock',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToStock(),
+        },
+        {
+            icon: <GlobeAmericasIcon className='MenuVertical__icon' />,
+            label: 'Ubicaciones',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToUbicaciones(),
+        },
+        
+        
+        
+        
     ];
 
     const handleToggle = (index) => {
@@ -76,31 +102,15 @@ function MenuVertical() {
     return (
         <nav className='MenuVertical'>
             <ul className='MenuVertical__list'>
-                {menuData.map((menu, idx) => (
-                    <li onClick={() => menu.label === 'Radicación' && navigateToNuevaRadicacion() || menu.label === 'Menu Principal' && handleIrAlMenu()} key={menu.label} className='MenuVertical__list__li'>
+                {menuData.map((menu) => (
+                    <li onClick={menu.fn} key={menu.label} className='MenuVertical__list__li'>
                         <div className='MenuVertical__list__li__container--option'>
-                            <div
-                                onClick={() => menu.subOptions.length && !menu.disabled && handleToggle(idx)}
-                                disabled={menu.disabled}
-                                className='MenuVertical__list__li__option'
-                            >
+                            <div className='MenuVertical__list__li__option'>
                                 {menu.icon}
-                                {menu.label} 
-                            </div>
-                            <div className='MenuVertical__list__li__container--option__icon'>
-                                {menu.subOptions.length ? (openMenus[idx] ? <ChevronUpIcon className='MenuVertical__icon' /> : <ChevronDownIcon className='MenuVertical__icon' />) : null}
+                                {menu.label}
                             </div>
                         </div>
-                        {menu.subOptions.length > 0 && openMenus[idx] && (
-                        <ul className='MenuVertical__list__li__submenu'>
-                            {menu.subOptions.map((sub) => (
-                                <li onClick={sub.fn} className='MenuVertical__list__li__submenu__item' key={sub.label}>
-                                    <div>{sub.label}</div>
-                                </li>
-                            ))}
-                        </ul>
-                    )}   
-                    </li>  
+                    </li>
                 ))}
             </ul>
         </nav>

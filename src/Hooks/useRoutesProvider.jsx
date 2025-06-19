@@ -65,6 +65,12 @@ import OtrasActuacionesListadoTitulares from "@/Pages/OtrasActuacionesListadoTit
 import BuscadorDeOtrosActosHistorias from "@/Pages/BuscadorDeOtrosActosHistorias";
 import OtrasActuacionesListadoHistorias from "@/Pages/OtrasActuacionesListadoHistorias";
 import ReporteDane from "@/Pages/ReporteDane";
+import AAStock from "@/Pages/AAStock";
+import AAUbicaciones from "@/Pages/AAUbicaciones";
+import AAFabricantes from "@/Pages/AAFabricantes";
+import AAProveedores from "@/Pages/AAProveedores";
+import AAPiezas from "@/Pages/AAPiezas";
+import AAOrdenesDeCompra from "@/Pages/AAOrdenesDeCompra";
 
 function useRoutesProvider() {
 
@@ -150,6 +156,12 @@ function useRoutesProvider() {
             { path: '/buscador-de-otros-actos-historias', element: <BuscadorDeOtrosActosHistorias /> },
             { path: '/otras-actuaciones-listado-historias', element: <OtrasActuacionesListadoHistorias /> },
             { path: '/reporte-dane', element: <ReporteDane /> },
+            { path: '/stock', element: <AAStock /> },
+            { path: '/ubicaciones', element: <AAUbicaciones /> },
+            { path: '/fabricantes', element: <AAFabricantes /> },
+            { path: '/proveedores', element: <AAProveedores /> },
+            { path: '/piezas', element: <AAPiezas /> },
+            { path: '/ordenes-de-compra', element: <AAOrdenesDeCompra /> },
         ])
       
         return routes
