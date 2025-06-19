@@ -1,0 +1,70 @@
+@use '../../../../Sass/_variables.scss' as *;
+@use '../../../../Sass/_mixins.scss' as *;
+
+.formactualizarnota--form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 32px;
+    gap: 24px;
+}
+.formactualizarfechasalida--input {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    text-align: left;
+    gap: 4px;
+}
+.formactualizarnota--section__close {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-area--modificator {
+    width: 380px;
+    height: 120px;
+    resize: none;
+    padding: 16px;
+    cursor: text;
+}
+
+.formactualizarnota--textarea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    &__label {
+        width: 100%;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        color: $font-color-primary;
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+    &__textarea {
+        width: 100%;
+        min-height: 120px;
+        padding: 0 1rem;
+        border: none;
+        outline: none;
+        background-color: $primary-hover-blue;
+        border-radius: $border-radius-md;
+        resize: none;
+        padding: 1rem;
+    }
+}

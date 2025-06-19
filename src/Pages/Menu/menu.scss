@@ -1,0 +1,14 @@
+@use '../../Sass/mixins' as *;
+
+.menucard__icon_general {
+    width: 40px;
+    color: #030303;
+    @include responsive(mobile) {
+        width: 40px;
+    }
+}
+
+.menucard__icon_general-tv {
+    width: 1.25rem;
+    color: #030303;
+}

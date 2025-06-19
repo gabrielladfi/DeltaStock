@@ -1,0 +1,13 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.title-section-info {
+    width: 100%;
+    height: auto;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $font-color-primary;
+    text-align: left;
+    text-align: left;
+    
+}

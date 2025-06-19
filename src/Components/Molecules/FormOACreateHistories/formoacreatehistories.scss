@@ -1,0 +1,43 @@
+.form-oa-create-histories {
+    width: auto;
+    height: auto;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    gap: 24px;
+    overflow-y: auto;
+    &__section-inputs {
+        width: 100%;
+        max-width: 540px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        &__input-container {
+            width: 16.125rem;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+    &__section-textarea {
+        width: 100%;
+        max-width: 33rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form-oa-create-histories__section-inputs__input-container__select {
+    background-color: #fff;
+}

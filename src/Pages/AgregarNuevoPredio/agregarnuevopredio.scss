@@ -1,0 +1,202 @@
+@use '../../Sass/_mixins.scss' as *;
+@use '../../Sass/_variables.scss' as *;
+
+.agregarnuevopredio-section {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__article-table {
+        width: 100%;
+        height: auto;
+        padding: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        &__div-title {
+            width: 100%;
+            &__h2 {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.button--save {
+    padding: 16px;
+}
+.table-section {
+    width: 100%;
+}
+
+.nuevaradicacion-genarales__article {
+    width: 420px;
+}
+
+.crearnuevasolicitudnr__div--buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+.agregarnuevopredio-section-numeroradicacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__article {
+        width: 100%;
+        height: auto;
+        padding-left: 48px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding-left: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &__h3 {
+            font-size: 20px;
+            font-weight: 400;
+            @include responsive(mobile) {
+                font-size: 16px;
+            }
+        }
+        &__p {
+            font-size: 24px;
+            font-weight: 200;
+            @include responsive(mobile) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.agregarnuevopredio-section-numeroradicacion-section-direccion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__article {
+        width: 100%;
+        height: auto;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &__h2 {
+            font-size: 24px;
+            font-weight: 500;
+            @include responsive(mobile) {
+                font-size: 20px;
+            }
+        }
+        &__section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}
+
+.buttons-vecino-colindante {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding-left: 16px;
+    cursor: pointer;
+    @include responsive(mobile) {
+        padding-left: 0px;
+        flex-direction: column;
+    }
+}
+
+.button-crear-predio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 48px;
+    @include responsive(mobile) {
+        padding-left: 0;
+    }
+}
+
+.modal-agregar-vecino-colindante__div {
+    width: 90%;
+    max-width: 35.75rem;
+    height: auto;
+    background-color: $primary-color;
+    border-radius: $border-radius-md;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__button {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            &__icon {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
+    }
+}
+
+.buttons-add-vecino-colindante-modal__div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    @include responsive(desktop) {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,104 @@
+@use '../../../Sass/variables' as *;
+@use '../../../Sass/mixins' as *;
+
+.welcomenameuser {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8125rem;
+    padding: 1rem;
+    @include responsive(tablet) {
+        padding-left: 1rem;
+    }
+    @include responsive(desktop) {
+        padding-left: 1rem;
+    }
+    &__p {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-regular;
+        line-height: 1rem;
+        color: $font-color-gray;
+        @include responsive(tablet) {
+            width: 100%;
+            padding-left: .5rem;
+            padding-top: 1.5rem;
+            font-size: $font-size-lg;
+            justify-content: flex-start;
+        }
+        @include responsive(desktop) {
+            width: 100%;
+            padding-left: .5rem;
+            padding-top: 2rem;
+            font-size: $font-size-xl;
+            justify-content: flex-start;
+        }
+    }
+    &__article {
+        width: 100%;
+        height: 6.8125rem;
+        padding: 0 .75rem;
+        border-radius: $border-radius-lg;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: #ABC6DD;
+        background: -webkit-linear-gradient(46deg, rgba(171, 198, 221, 1) 0%, rgba(42, 72, 135, 1) 39%, rgba(35, 31, 94, 0.71) 98%);
+        background: -moz-linear-gradient(46deg, rgba(171, 198, 221, 1) 0%, rgba(42, 72, 135, 1) 39%, rgba(35, 31, 94, 0.71) 98%);
+        background: linear-gradient(46deg, rgba(171, 198, 221, 1) 0%, rgba(42, 72, 135, 1) 39%, rgba(35, 31, 94, 0.71) 98%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ABC6DD", endColorstr="#231F5E", GradientType=0);
+        &__p {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $font-size-md;
+            font-weight: $font-weight-regular;
+            line-height: 1rem;
+            color: $font-color-secondary;
+            @include responsive(desktop) {
+                font-size: $font-size-xl;
+            }
+        }
+        &__img {
+            display: block;
+        }
+        &__img--desktop {
+            display: none;
+        }
+        &__img--tablet {
+            display: none;
+        }
+        @include responsive(tablet) {
+            width: 100%;
+            min-height: 102px;
+            padding: 0 1.5rem;
+            justify-content: space-around;
+            &__img {
+                display: none;
+            }
+            &__img--desktop {
+                display: none;
+            }
+            &__img--tablet {
+                display: block;
+                height: 170px;
+            }
+        }
+        @include responsive(desktop) {
+            width: 100%;
+            min-height: 184px;
+            padding: 0 1.5rem;
+            justify-content: space-around;
+            &__img {
+                display: none;
+            }
+            &__img--desktop {
+                display: block;
+                height: 280px;
+            }
+        }
+    }
+}

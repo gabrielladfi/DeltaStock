@@ -1,0 +1,14 @@
+.cargando {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__p {
+        font-size: 48px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        margin-top: 250px;
+    }
+}

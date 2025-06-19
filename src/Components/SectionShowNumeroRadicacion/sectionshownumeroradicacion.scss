@@ -1,0 +1,28 @@
+.sectionshownumeroradicacion--section-titulo-numero-radicacion-forms-modales {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    &__numero-radicacion {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        &__p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__span {
+            font-size: 24px;
+            font-weight: 200;
+            padding-left: 12px;
+        }
+    }
+    
+}

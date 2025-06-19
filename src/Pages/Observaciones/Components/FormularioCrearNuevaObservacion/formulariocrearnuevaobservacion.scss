@@ -1,0 +1,262 @@
+.formulariocrearnuevaobservacion-container {
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    gap: 16px;
+    overflow-y: auto;
+    border-radius: 12px;
+    &__close {
+        width: 100%;
+        height: auto;
+        padding: 24px 24px 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__h2 {
+            font-size: 24px;
+            font-weight: 400;
+            color: #000;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+        &__button {
+            width: 48px;
+            height: 48px;
+            border: none;
+            background-color: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            &__icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &__numero-radicacion {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 0 24px;
+        &__p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+        &__span {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+    &__inputs {
+        width: 100%;
+        height: auto;
+        padding: 0 24px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        overflow-y: auto;
+        &__div {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 8px;
+            &__label {
+                font-size: 16px;
+                font-weight: 400;
+                color: #000;
+            }
+            &__input {
+                width: 100%;
+                height: 48px;
+                border: 2px solid #000;
+                border-radius: 4px;
+                padding: 0 12px;
+                font-size: 16px;
+                font-weight: 300;
+                background-color: #fff;
+            }
+        }
+    }
+    &__text-div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        &__label {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+        &__p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #706e6e;
+        }
+    }
+    &__checkbox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        &__label {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+        &__div {
+            width: auto;
+            height: auto;
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__input {
+                width: 24px;
+                height: 24px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+    &__buttons {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-top: 12px;
+        justify-content: space-between;
+    }
+}
+.agregarObservacion--form-div-textarea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    &__textarea {
+        width: 100%;
+        height: 100px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 300;
+        resize: none;
+    }
+}
+
+.formulario-crear-nueva-observacion-inputs {
+    margin: 0;
+    padding-left: 0;
+}
+.formulario-crear-nueva-observacion-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.formulario-crear-nueva-observacion-buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agregarObservacion--form-div-textarea__header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__button {
+        width: auto;
+        height: 24px;
+        padding: 0 12px;
+        border: none;
+        background-color: #6b6868;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+
+    }
+}
+
+.tipo-area {
+    width: 100%;
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+}
+
+.agregarrequisito--form-div__checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkBox--input {
+    width: 28px;
+    height: 28px;
+}
+
+.error-input-text {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.formulariocrearnuevaobservacion-container__textarea-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 8px 0 0;
+   
+}
+
+.formulariocrearnuevaobservacion-container__buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}

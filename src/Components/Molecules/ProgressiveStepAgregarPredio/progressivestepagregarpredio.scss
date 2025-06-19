@@ -1,0 +1,136 @@
+@use '../../../Sass/mixins.scss' as *;
+@use '../../../Sass/_variables.scss' as *;
+
+.progressive-step-agregar-predio {
+    position: relative;
+    width: 95%;
+    min-height: auto;
+    padding: 1.25rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: $border-width-md solid $primary-gray-light-3;
+    border-bottom: $border-width-md solid $primary-gray-light-3;
+    &__line {
+        position: absolute;
+        top: 38px;
+        left: 0;
+        width: 75%;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: $border-width-sm dashed $blue-line;
+    }
+    &__article {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        z-index: 50;
+        &__div {
+            width: 2.375rem;
+            height: 2.375rem;
+            border-radius: $border-radius-md;
+            background-color: $secondary-blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-bold;
+                color: $font-color-gray-2;
+            }
+        }
+        &__div--active {
+            width: 2.375rem;
+            height: 2.375rem;
+            border-radius: $border-radius-md;
+            background-color: $blue-line;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            span {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+            }
+        }
+        &__div--active-four {
+            width: 2.375rem;
+            height: 2.375rem;
+            border-radius: $border-radius-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, 
+                #2A4887 25%,
+                rgba(203, 231, 255) 25%
+            );
+            span {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-bold;
+                color: $font-color-gray-2;
+            }
+        }
+        &__div--active-five {
+            width: 2.375rem;
+            height: 2.375rem;
+            border-radius: $border-radius-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, 
+                #2A4887 50%,
+                rgba(203, 231, 255) 50%
+            );
+            span {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+            }
+        }
+        &__div--active-six {
+            width: 2.375rem;
+            height: 2.375rem;
+            border-radius: $border-radius-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, 
+                #2A4887 75%,
+                rgba(203, 231, 255) 75%
+            );
+            span {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+            }
+        }
+        &__div--active-seven {
+            width: 2.375rem;
+            height: 2.375rem;
+            border-radius: $border-radius-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $green-entregado;
+            span {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+            }
+        }
+        &__span {
+            text-align: center;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-regular;
+            color: $font-color-gray-2;
+        }
+    }
+}

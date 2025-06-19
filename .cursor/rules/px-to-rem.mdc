@@ -1,0 +1,6 @@
+---
+description: px to rem
+globs: 
+alwaysApply: false
+---
+Convert all px to rem

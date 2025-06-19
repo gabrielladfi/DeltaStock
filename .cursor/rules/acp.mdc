@@ -1,0 +1,12 @@
+---
+description: when i did change in my code
+globs: 
+alwaysApply: false
+---
+acp
+
+when i did change in my code
+
+create a message where i can see all changes that i did
+
+git acp "Nicolas Garcia" "feat: [List of changes in English]"

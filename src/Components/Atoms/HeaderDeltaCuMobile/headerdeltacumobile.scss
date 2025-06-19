@@ -1,0 +1,17 @@
+@use '../../../Sass/variables' as *;
+@use '../../../Sass/mixins' as *;
+
+.headerdeltacumobile {
+    width: 100%;
+    height: 5.8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-blue;
+    @include responsive(tablet) {
+        display: none;
+    }
+    @include responsive(desktop) {
+        display: none;
+    }
+}

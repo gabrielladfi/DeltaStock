@@ -1,0 +1,506 @@
+@use '../../../../Sass/_variables.scss' as *;
+@use '../../../../Sass/_mixins.scss' as *;
+
+.tablavecinoscolindantes-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 48px;
+    padding: 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.tablavecinoscolindantes-button-delete {
+    width: 80px;
+    height: 26px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+//new styles
+.tablecolindantesNew__table {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    &__thead {
+        display: none;
+        @include responsive(tablet-small) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include responsive(tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include responsive(desktop) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__tr {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &__th--name {
+                width: 30%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary-gray-light;
+                font-weight: $font-weight-medium;
+            }
+            &__th--id {
+                width: 15%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary-gray-light;
+                font-weight: $font-weight-medium;
+            }
+            &__th--delete {
+                width: 15%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary-gray-light;
+                font-weight: $font-weight-medium;
+            }
+            &__th {
+                width: 25%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary-gray-light;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+    &__tbody {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+        @include responsive(tablet-small) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0;
+            height: 380px;
+        }
+        @include responsive(tablet) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 0;
+            height: 380px;
+        }
+        @include responsive(desktop) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 0;
+            overflow-y: auto;
+            height: 380px;
+        }
+        &__tr {
+            width: 100%;
+            height: 12.9375rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1rem;
+            background-color: $primary-color;
+            box-shadow: $shadow-button;
+            border-radius: $border-radius-md;
+            &__p--delete {
+                width:  100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__button {
+                    width: 15rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: red;
+                    border: none;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__icon {
+                        display: none;
+                    }
+                }
+            }
+            @include responsive(tablet-small) {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            box-shadow: none;
+            border-radius: 0;
+            &:nth-child(odd) {
+                background-color: $primary-background-input;
+            }
+            &:nth-child(even) {
+                background-color: $primary-color;
+            }
+            &__p--name {
+                width: 30%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__p--id {
+                width: 15%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__p--delete {
+                display: none;
+                @include responsive(tablet-small) {
+                    width: 15%;
+                    min-height: 3rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__button {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: red;
+                        border: none;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            display: none;
+                        }
+                        &__icon {
+                            display: flex;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                }
+                }
+                @include responsive(tablet) {
+                    width: 15%;
+                    min-height: 3rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__button {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: red;
+                        border: none;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            display: none;
+                        }
+                        &__icon {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                @include responsive(desktop) {
+                    width: 15%;
+                    min-height: 3rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__button {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: red;
+                        border: none;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            display: none;
+                        }
+                        &__icon {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &__p {
+                width: 25%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            }
+            @include responsive(tablet) {
+                width: 100%;
+                height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            box-shadow: none;
+            border-radius: 0;
+            &:nth-child(odd) {
+                background-color: $primary-background-input;
+            }
+            &:nth-child(even) {
+                background-color: $primary-color;
+            }
+            &__p--name {
+                width: 30%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__p--id {
+                width: 15%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__p--delete {
+                width: 15%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__button {
+                    width: 2rem;
+                    height: 2rem;
+                    background-color: red;
+                    border: none;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__p {
+                        display: none;
+                    }
+                    &__icon {
+                        display: flex;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        color: $primary-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+            &__p {
+                width: 25%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            }
+            @include responsive(desktop) {
+                width: 100%;
+                height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            box-shadow: none;
+            border-radius: 0;
+            &:nth-child(odd) {
+                background-color: $primary-background-input;
+            }
+            &:nth-child(even) {
+                background-color: $primary-color;
+            }
+            &__p--name {
+                width: 30%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__p--id {
+                width: 15%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__p--delete {
+                @include responsive(tablet-small) {
+                    width: 15%;
+                    min-height: 3rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__button {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: red;
+                        border: none;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            display: none;
+                        }
+                        &__icon {
+                            display: flex;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                }
+                }
+                @include responsive(tablet) {
+                    width: 15%;
+                    min-height: 3rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__button {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: red;
+                        border: none;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            display: none;
+                        }
+                        &__icon {
+                            display: flex;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                }
+                }
+                @include responsive(desktop) {
+                    width: 15%;
+                    min-height: 3rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &__button {
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: red;
+                        border: none;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__p {
+                            display: none;
+                        }
+                        &__icon {
+                            display: flex;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            color: $primary-color;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &__p {
+                width: 25%;
+                min-height: 3rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            }
+            
+        }
+    }
+}
+
+.tabla-vecinos-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $font-color-gray-light;
+    margin-right: 0.5rem;
+    @include responsive(tablet-small) {
+        display: none;
+    }
+    @include responsive(tablet) {
+        display: none;
+    }
+    @include responsive(desktop) {
+        display: none;
+    }
+}

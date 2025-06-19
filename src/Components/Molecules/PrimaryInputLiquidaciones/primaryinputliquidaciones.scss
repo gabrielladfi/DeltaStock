@@ -1,0 +1,37 @@
+.primaryinputliquidaciones-container {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    &__label {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        text-align: left;
+    }
+    &__input {
+        width: 200px;
+        height: 38px;
+        padding-left: 16px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        background-color: #fff;
+        &:focus {
+            outline: none;
+            border: 1px solid #030303;
+        }
+    }
+}

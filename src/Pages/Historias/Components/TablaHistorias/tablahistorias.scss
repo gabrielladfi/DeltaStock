@@ -1,0 +1,127 @@
+@use '../../../../Sass/_variables' as *;
+@use '../../../../Sass/_mixins' as *;
+
+.thead-tabla-observacion--modificador {
+    width: 8%;
+    min-width: 52px;
+}
+.thead-tabla-observacion--modificador-dos {
+    width: 15%;
+    min-width: 220px;
+}
+
+.thead-tabla-observacion--modificador-tres {
+    width: 10%;
+    min-width: 180px;
+}
+.tabla-observaciones-button-eliminar {
+    width: 80px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.capitalCase {
+    text-transform: capitalize;
+}
+.capitalCase--Observacion {
+    text-transform: lowercase;
+}
+.capitalCase--Observacion::first-letter {
+    text-transform: uppercase;
+}
+
+.tabal-observaciones-select {
+    width: 90%;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a5a5a534;
+    text-align: center;
+}
+.tabal-observaciones-select {
+    outline: none;
+    border: none;
+}
+
+.tabal-observaciones-select:focus{
+    border: none;
+}
+
+.selected-row {
+    background-color: rgb(0, 255, 0);
+}
+
+.tablahistoriascontainer {
+    width: 100%;
+    min-height: 450px;
+    overflow-y: auto;
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        &__thead {
+            width: 100%;
+            height: 3.25rem;
+            &__tr {
+                &__th--one, &__th--two, &__th--three, &__th--four {
+                    width: 25%;
+                    min-height: 3rem;
+                    text-align: center;
+                    color: $primary-gray-light;
+                    font-weight: $font-weight-medium;
+                }
+
+            }
+        }
+        &__tbody {  
+            width: 100%;
+            height: auto;
+            &__tr {
+                height: 3.25rem;
+                &:nth-child(odd) {
+                    background-color: $primary-background-input;
+                }
+                &:nth-child(even) {
+                    background-color: $primary-color;
+                }
+                
+                &__td-one, &__td-two, &__td-three, &__td-four {
+                    width: 25%;
+                    min-height: 3.25rem;
+                    text-align: center;
+                    border: none;
+                    @include responsive(mobile) {
+                        font-size: $font-size-xs;
+                    }
+                }
+                &__td-four__button {
+                    width: 5rem;
+                    height: 28px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: $primary-blue;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    @include responsive(tablet-small) {
+        min-height: calc(100% - 415px);
+        
+    }
+    @include responsive(tablet) {
+        min-height: calc(100% - 415px);
+        
+    }
+    @include responsive(desktop) {
+        min-height: calc(100% - 415px);
+    }
+   
+
+
+}

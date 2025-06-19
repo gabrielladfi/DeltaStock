@@ -1,0 +1,26 @@
+@use '../../../Sass/_variables' as *;
+@use '../../../Sass/_mixins' as *;
+
+.containertitlebuttonsadddata {
+    width: 100%;
+    max-height: 13.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    @include responsive(tablet-small) {
+        flex-direction: row;
+        max-height: 6.125rem;
+    }
+    @include responsive(tablet) {
+        flex-direction: row;
+        max-height: 6.125rem;
+        gap: 16px;
+    }
+    @include responsive(desktop) {
+        flex-direction: row;
+        max-height: 6.125rem;
+        padding: 0 1rem;
+    }
+}

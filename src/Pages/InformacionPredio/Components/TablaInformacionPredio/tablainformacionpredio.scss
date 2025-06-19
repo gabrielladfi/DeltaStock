@@ -1,0 +1,6 @@
+@use '../../../../Sass/_mixins.scss' as *;
+
+
+.tablecolindantesnew {
+    @include table-styles(4, 25%);
+}

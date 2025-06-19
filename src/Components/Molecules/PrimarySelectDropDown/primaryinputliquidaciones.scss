@@ -1,0 +1,30 @@
+.primaryinputliquidaciones-div {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    &__label {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        text-align: left;
+    }
+    &__input {
+        width: 200px;
+        height: 38px;
+        padding-left: 16px;
+        border: 1px solid #afafaf;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        &:focus {
+            outline: none;
+            border: 1px solid #030303;
+        }
+    }
+}

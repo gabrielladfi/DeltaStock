@@ -1,0 +1,82 @@
+@use '../../../Sass/_variables' as *;
+
+.primaryinputliquidaciones-div {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    &__label {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        text-align: left;
+    }
+    &__input {
+        width: 200px;
+        height: 38px;
+        padding-left: 16px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        background-color: #fff;
+        &:focus {
+            outline: none;
+            border: 1px solid #030303;
+        }
+    }
+}
+
+.primarytextarea-div__input {
+    width: 320px;
+    height: 140px;
+    resize: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: #fff;
+    &:focus {
+        outline: none;
+        border: 1px solid #030303;
+    }
+}
+
+.primary-text-area--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.primary-text-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    &__label {
+        width: 100%;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        color: $font-color-primary;
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+    &__textarea {
+        width: 100%;
+        min-height: 120px;
+        padding: 0 1rem;
+        border: none;
+        outline: none;
+        background-color: $primary-hover-blue;
+        border-radius: $border-radius-md;
+        resize: none;
+        padding: 1rem;
+    }
+}

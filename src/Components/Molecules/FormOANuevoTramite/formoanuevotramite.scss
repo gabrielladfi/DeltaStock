@@ -1,0 +1,46 @@
+.form-oa-nuevo-tramite__container {
+    width: 100vw;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    @media screen and (max-width: 1024px) {
+        align-items: center;
+    }
+}
+.form-oa-nuevo-tramite__container-input {
+    width: 16.125rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.form-oa-nuevo-tramite__input-text {
+    width: 16.125rem;
+    height: 2.875rem;
+    border-radius: 4px;
+    border: 2px solid #030303;
+    padding-left: 1rem;
+}
+
+.form-oa-nuevo-tramite__input-number {
+    width: 16.125rem;
+    height: 2.875rem;
+    border-radius: 4px;
+    border: 2px solid #030303;
+    padding-left: 1rem;
+}
+
+.form-oa-nuevo-tramite__container-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}

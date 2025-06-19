@@ -1,0 +1,53 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.input-container-basic {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    &__label {
+        width: 100%;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        color: $font-color-primary;
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+    &__input-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @include responsive(tablet) {
+            width: 100%;
+        }
+        &__input {
+            width: 100%;
+            height: 3.3125rem;
+            min-height: 3.3125rem;
+            padding: 0 1rem;
+            border: none;
+            outline: none;
+            background-color: $primary-hover-blue;
+            border-radius: $border-radius-md;
+        }
+        &__error-message {
+            width: 100%;
+            font-size: $font-size-xs;
+            font-weight: $font-weight-regular;
+            color: $font-color-error;
+            text-align: left;
+            padding-left: 0.5rem;
+        }
+    }
+}
+.error {
+    border: 2px solid red;
+    color: red;
+}

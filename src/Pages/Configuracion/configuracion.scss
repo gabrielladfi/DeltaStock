@@ -1,0 +1,91 @@
+@use '../../Sass/_mixins.scss' as *;
+
+.configuracion--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.div-tabla-configuracion {
+    width: 620px;
+    height: 450px;
+    position: relative;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    &__table {
+        width: 100%;
+        height:auto;
+        overflow-y: auto;
+        overflow-x: auto;
+        border-collapse: collapse;
+        &__thead {
+            width: 100%;
+            height: 42px;
+            background-color: #343a40;
+            color: #fff;
+            font-size: 14px;
+            &__tr {
+                width: 100%;
+                height: 38px;
+                &__th-valor {
+                    width: 70%;
+                }
+            }
+        }
+        &__tbody {
+            width: 100%;
+            height: auto;
+            &__tr {
+                height: 38px;
+            }
+        }
+    }
+}
+
+.div-form-configuracion {
+    width: auto;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__form {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 48px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        &__label {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+        }
+        &__input {
+            width: 100%;
+            height: 38px;
+            padding: 8px;
+            border: 1px solid #343a40;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
+
+.decoration-h2 {
+    text-transform: capitalize;
+}
+
+.configuraciontabla {
+    @include table-styles(10.6875, 50%);
+}

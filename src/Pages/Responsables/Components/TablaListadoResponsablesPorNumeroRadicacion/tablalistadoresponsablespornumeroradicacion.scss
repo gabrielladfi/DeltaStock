@@ -1,0 +1,5 @@
+@use '../../../../Sass/mixins' as *;
+
+.tablalistadoresponsablespornumeroradicacion {
+    @include table-styles(13.8, 10%);
+}

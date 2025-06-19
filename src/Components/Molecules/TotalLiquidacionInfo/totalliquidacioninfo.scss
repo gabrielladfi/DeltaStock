@@ -1,0 +1,70 @@
+.totalliquidacioninfo {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    &__header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 8px 0 16px;
+        &__title {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+        &__button {
+            width: 48px;
+            height: 48px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            &__icon {
+                width: 24px;
+                height: 24px;
+                color: #000;
+            }
+        }
+    }
+    &__section--content {
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        &__article {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            &__title {
+                min-width: 124px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #000;
+                text-align: left;
+            }
+            
+        }
+    }
+    &__section--footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px 16px 16px;
+    }
+}

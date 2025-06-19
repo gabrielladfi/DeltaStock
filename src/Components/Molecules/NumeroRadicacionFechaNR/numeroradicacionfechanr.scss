@@ -1,0 +1,30 @@
+@use '../../../Sass/_mixins.scss' as *;
+@use '../../../Sass/_variables.scss' as *;
+
+
+.numeroradicacionfechanr {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.25rem;
+    gap: 1rem;
+    @include responsive(tablet) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3.4375rem;
+        padding-left: 0;
+    }
+    @include responsive(desktop) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3.4375rem;
+        padding-left: 0;
+       
+    }
+    
+}

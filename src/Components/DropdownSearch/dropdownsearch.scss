@@ -1,0 +1,108 @@
+@use '../../Sass/mixins' as *;
+@use '../../Sass/variables' as *;
+
+.searchable-select-container-atom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    &__label {
+      width: 100%;
+      font-size: $font-size-md;
+      font-weight: $font-weight-regular;
+      color: $font-color-primary;
+      text-align: left;
+      padding-left: 0.5rem;
+    }
+    &__input {
+      width: 100%;
+      min-height: 3.3125rem;
+      padding: 0 1rem;
+      border: none;
+      outline: none;
+      background-color: $primary-hover-blue;
+      border-radius: $border-radius-md;
+    }
+    &__input:focus {
+      outline: none;
+    }
+}
+
+/* Contenedor del componente */
+.searchable-select-container-atom {
+    width: 100%;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+  
+  /* Etiqueta del input */
+.searchable-select-container label {
+    font-size: 14px;
+    color: #000;
+    display: block;
+    margin-bottom: 4px;
+}
+  
+  /* Input de búsqueda */
+  .searchable-select-input {
+    width: 100px;
+    height: 48px;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    @include responsive(mobile) {
+      width: 100%;
+      border: 2px solid #000;
+     
+
+  }
+  }
+  
+  /* Lista desplegable */
+  .searchable-select-options {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+
+  }
+  
+  /* Mostrar lista cuando está abierta */
+  .searchable-select-container {
+    width: 100%;
+    display: block;
+    z-index: 100;
+  }
+  
+  /* Opciones de la lista */
+  .searchable-select-option {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Efecto hover en las opciones */
+  .searchable-select-option:hover {
+    background-color: #f0f0f0;
+  }
+
+  .input-base__input--select {
+    border: 2px solid #000;
+  }
+  

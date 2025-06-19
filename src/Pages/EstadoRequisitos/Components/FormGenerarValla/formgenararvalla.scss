@@ -1,0 +1,171 @@
+@use '../../../../Sass/mixins' as *;
+
+.form-generar-valla-container {
+    width: 90%;
+    height: 85%;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 52px;
+    overflow: hidden;
+    overflow-y: auto;
+    &__header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px;
+        padding-bottom: 12px;
+        @include responsive(mobile) {
+            padding: 24px;
+            padding-bottom: 4px;
+        }
+
+        &__h2 {
+            font-size: 24px;
+            font-weight: 400;
+            @include responsive(mobile) {
+                font-size: 20px;
+            }
+        }
+
+        &__button {
+            width: 48px;
+            height: 48px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            &__icon {
+                width: 24px;
+            }
+        }
+    }
+    &__info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 0 48px;
+        @include responsive(mobile) {
+            padding: 0 24px;
+        }
+    }
+    &__inputs {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 0 48px;
+        @include responsive(mobile) {
+            flex-direction: column;
+            padding: 0 24px;
+        }
+
+        &__textarea {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: flex-start;
+            gap: 8px;
+            padding-left: 16px;
+            @include responsive(mobile) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.form-generar-valla__input-base {
+    padding: 0 48px;
+}
+.form-generar-valla-label {
+    min-width: 392px;
+}
+.fomr-generar-valla-input {
+    border: 2px solid #000;
+}
+
+.form-generar-valla-textarea {
+    resize: none;
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+}
+.article-textarea {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.form-generar-valla__section--button {
+    padding-top: 24px;
+}
+.form-generar-valla__section-close {
+    padding: 32px 32px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form-generar-valla-button-cerrar {
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &__icon {
+        width: 24px;
+    }
+}
+
+.modal-valla-generada {
+    width: 380px;
+    height: auto;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    &__h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__icon {
+        width: 52px;
+        margin-bottom: 16px;
+    }
+    &__button {
+        margin-top: 16px;
+    }
+
+}
+
+.form-generar-valla-label-tipo-tramite {
+    max-width: 392px;
+    min-width: 392px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}

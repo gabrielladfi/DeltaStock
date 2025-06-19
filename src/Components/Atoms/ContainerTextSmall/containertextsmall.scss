@@ -1,0 +1,28 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.container-text-small {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    @include responsive(tablet) {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    @include responsive(desktop) {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+}

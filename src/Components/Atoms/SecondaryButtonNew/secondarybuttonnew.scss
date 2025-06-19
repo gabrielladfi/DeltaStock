@@ -1,0 +1,33 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.secondary-button-new {
+    width: 17.25rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: $primary-button-color;
+    border-radius: $border-radius-md;
+    border: $border-width-sm solid $primary-button-color;
+    cursor: pointer;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    box-shadow: $shadow-button;
+    @include responsive(tablet) {
+        width: 26.0625rem;
+        height: 2.375rem;
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+    }
+    @include responsive(desktop) {
+        width: 30.8125rem;
+        height: 3.125rem;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,79 @@
+@use '../../../../Sass/_variables' as *;
+@use '../../../../Sass/_mixins' as *;
+
+.dropdown-documentos-revisados {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    &__header, &__select {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        &__div-one {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+        }
+        &__div-two {
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.dropdowndocumentosrevisados-span {
+    font-size: $font-size-md;
+    color: $font-color-primary;
+    font-weight: $font-weight-regular;
+    padding-left: 1rem;
+}
+
+.dropdown-documentos-revisados__select--modificador {
+    border-top: none;
+}
+
+.dropdowndocumentosrevisados-select {
+    width: 95%;
+    height: 53px;
+    border: none;
+    border-radius: $border-radius-md;
+    padding-left: 1rem;
+    background-color: $primary-background-input;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    color: $font-color-placeholder;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5em;
+    &:focus {
+        outline: none;
+    }
+}
+
+.dropdown-documentos-revisados__loader {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+    border: none;
+}

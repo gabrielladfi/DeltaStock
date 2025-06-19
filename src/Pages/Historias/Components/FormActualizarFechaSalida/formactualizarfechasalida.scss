@@ -1,0 +1,30 @@
+.formactualizarfechasalida--form {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 0;
+    gap: 24px;
+}
+.formactualizarfechasalida--input {
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    text-align: left;
+    gap: 4px;
+}
+.formcrearhistoria--section__close {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

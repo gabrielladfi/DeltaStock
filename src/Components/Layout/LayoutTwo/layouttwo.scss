@@ -1,0 +1,12 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/mixins.scss' as *;
+
+.layouttwo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}

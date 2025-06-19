@@ -1,0 +1,30 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.box-container-inputs-by-info-big {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.3125rem;
+    @include responsive(tablet) {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.3125rem;
+        overflow-y: auto;
+    }
+    @include responsive(desktop) {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.3125rem;
+        overflow-y: auto;
+    }
+}

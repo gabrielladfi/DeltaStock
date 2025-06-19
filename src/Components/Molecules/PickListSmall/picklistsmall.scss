@@ -1,0 +1,58 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.picklistsmall {
+    width: 278px;
+    height: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    @include responsive(tablet) {
+        width: 15rem;
+    }
+    @include responsive(desktop) {
+        width: 15rem;
+    }
+    &__label {
+        width: 100%;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        color: $font-color-primary;
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+    &__div {
+        position: relative;
+        width: 100%;
+        height: 3.3125rem;
+        min-height: 3.3125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__icon {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &__select {
+            width: 100%;
+            height: 100%;
+            padding: 0 1rem;
+            border: none;
+            outline: none;
+            background-color: $primary-hover-blue;
+            border-radius: $border-radius-md;
+            &__option {
+                font-size: $font-size-md;
+                font-weight: $font-weight-regular;
+                color: $font-color-primary;
+            }
+        }
+    }
+}

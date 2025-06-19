@@ -1,0 +1,131 @@
+/* Contenedor del componente */
+.searchable-select-container {
+    width: auto;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Etiqueta del input */
+  .searchable-select-container label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  /* Input de búsqueda */
+  .searchable-select-input {
+    width: 260px;
+    height: 48px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  /* Lista desplegable */
+  .searchable-select-options {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 120px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  /* Mostrar lista cuando está abierta */
+  .searchable-select-container .searchable-select-options {
+    display: block;
+  }
+  
+  /* Opciones de la lista */
+  .searchable-select-option {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Efecto hover en las opciones */
+  .searchable-select-option:hover {
+    background-color: #f0f0f0;
+  }
+
+  .primaryinputliquidaciones-div {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    &__label {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        text-align: left;
+    }
+    &__input {
+        width: 200px;
+        height: 38px;
+        padding-left: 16px;
+        border: 1px solid #afafaf;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        &:focus {
+            outline: none;
+            border: 1px solid #030303;
+        }
+    }
+}
+
+.primaryinputliquidaciones-div-dropdown {
+  width: 200px;
+}
+
+.primaryinputliquidaciones-div-dropdown--select {
+  width: 200px;
+}
+
+.div-label-input-select {
+  width: auto;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    &__label {
+      width: 160px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        text-align: left;
+    }
+    &__input{
+      width: 200px;
+        height: 38px;
+        border: 1px solid #afafaf;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        &:focus {
+            outline: none;
+            border: 1px solid #030303;
+        }
+    }
+}
+  

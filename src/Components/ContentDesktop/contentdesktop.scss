@@ -1,0 +1,35 @@
+@use '../../Sass/_variables.scss' as *;
+@use '../../Sass/mixins.scss' as *;
+
+.contentdesktop {
+    width: 100%;
+    height: calc(100% - 10rem);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.125rem;
+    overflow: auto;
+    position: relative;
+    @include responsive(tablet) {
+        height: 100%;
+    }
+    @include responsive(desktop) {
+        height: 100%;
+    }
+}
+
+.contentdesktop-tv {
+    width: 100%;
+    height: calc(100% - 8rem);
+    padding: 1.5rem;
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    overflow: auto;
+    position: relative;
+}

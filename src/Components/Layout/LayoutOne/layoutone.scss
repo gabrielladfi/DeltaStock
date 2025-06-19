@@ -1,0 +1,18 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/mixins.scss' as *;
+
+.layoutone {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    @include responsive(tablet) {
+        flex-direction: row;
+    }
+    @include responsive(desktop) {
+        flex-direction: row;
+    }
+}

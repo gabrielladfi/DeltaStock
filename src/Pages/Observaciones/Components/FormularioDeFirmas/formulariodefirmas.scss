@@ -1,0 +1,23 @@
+.formulariodefirmas {
+    width: 90%;
+    max-width: 490px;
+    height: auto;
+    padding: 0 0 24px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+}
+.formulariodefirmas__container--firmas {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.button-generar-documento-formulario {
+    margin-top: 24px;
+}

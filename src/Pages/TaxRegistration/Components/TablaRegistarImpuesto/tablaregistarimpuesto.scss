@@ -1,0 +1,5 @@
+@use '../../../../Sass/_mixins' as *;
+
+.tablaregistarimpuesto {
+    @include table-styles(10, 33.33%);
+}

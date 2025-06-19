@@ -1,0 +1,178 @@
+@use '../../Sass/_mixins' as *;
+@use '../../Sass/_variables' as *;
+
+.login {
+    width: 100vw;
+    height: 100dvh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include responsive(tablet) {
+        flex-direction: column;
+    }
+    @include responsive(tablet) {
+        flex-direction: row-reverse;
+    }
+    @include responsive(desktop) {
+        flex-direction: row-reverse;
+    }
+    &__article-img {
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        background-image: url('../../assets/images/fondoazulmobile.svg');
+        background-size: auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        @include responsive(tablet-small) {
+            background-image: url('../../assets/images/fondoazultabletsmall.svg');
+        }
+        @include responsive(tablet) {
+            width: 50%;
+            height: 100dvh;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../../assets/images/fondologintablet.png');
+        }
+        @include responsive(desktop) {
+            width: 50%;
+            height: 100dvh;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../../assets/images/fondoLogindesktop.png');
+        }
+    }
+    &__article-logo {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding: 23px 27px 44px 27px;
+        padding-bottom: 3.1875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: $primary-color;
+        @include responsive(tablet) {
+            width: 50%;
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 23px 27px 44px 50px;
+        }
+        @include responsive(desktop) {
+            width: 50%;
+            height: 100dvh;
+            display: flex;
+            align-items: flex-start;
+            padding: 23px 27px 44px 90px;
+        }
+        &__logo {
+            display: block;
+            @include responsive(tablet) {
+                display: none;
+            }
+            @include responsive(desktop) {
+                display: none;
+            }
+        }
+        &__form {
+            position: absolute;
+            top: -18rem;
+            width: 22rem;
+            height: 33.5rem;
+            background-color: #fff;
+            box-shadow: $shadow-sm;
+            border-radius: $border-radius-md;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            @include responsive(tablet) {
+                position: relative;
+                top: 0;
+                width: 100%;
+                max-width: 496px;
+                height: 100%;
+                background-color: #fff;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            @include responsive(desktop) {
+                position: relative;
+                top: 0;
+                width: 100%;
+                max-width: 39.4375rem;
+                height: 100%;
+                background-color: #fff;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 30px;
+            }
+            &__logo-tablet {
+                display: none;
+                @include responsive(tablet) {
+                    display: block;
+                    margin-bottom: 2.75rem;
+                }
+            }   
+            &__logo-desktop {
+                display: none;
+                @include responsive(desktop) {
+                    display: block;
+                    margin-bottom: 4.5rem;
+                }
+            }
+            &__h1 {
+                font-size: $font-size-xl;
+                line-height: 1rem;
+                font-weight: $font-weight-bold;
+                color: $font-color-primary;
+                @include responsive(tablet) {
+                    font-size: $font-size-xxl;
+                }
+                @include responsive(desktop) {
+                    font-size: $font-size-xxxxl;
+                }
+            }
+            &__p {
+                width: 17.625rem;
+                height: auto;
+                line-height: 20px;
+                text-align: center;
+                font-size: $font-size-lg;
+                font-weight: $font-weight-regular;
+                color: $font-color-primary;
+                @include responsive(tablet) {
+                    width: 100%;
+                    max-width: 31rem;
+                    text-align: left;
+                    font-size: $font-size-xl;
+                    line-height: 1.5625rem;
+                }
+                @include responsive(desktop) {
+                    width: 100%;
+                    max-width: 39.4375rem;
+                    text-align: left;
+                    font-size: $font-size-xxxl;
+                    line-height: 2.25rem;
+                }
+            }
+        }
+    }
+}

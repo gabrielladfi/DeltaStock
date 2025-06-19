@@ -1,0 +1,45 @@
+.erroractalegal {
+    width: auto;
+    height: auto;
+    padding: 48px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 4px;
+    border: none;
+    &__div-text-icon {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        &__h2 {
+            width: 440px;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: left;
+        }
+        &__icon {
+            width: 122px;
+        }
+    }
+    &__div-text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        &__p {
+            width: auto;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}

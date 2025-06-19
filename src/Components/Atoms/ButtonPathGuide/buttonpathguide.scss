@@ -1,0 +1,34 @@
+@use '../../../Sass/mixins' as *;
+
+.button-path-guide {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68686B;
+    position: fixed;
+    right: 48px;
+    bottom: 180px;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    @include responsive(mobile) {
+        width: 48px;
+        right: 24px;
+        bottom: 90px;
+        right: 16px;
+        background: rgba(104, 104, 107, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        -webkit-backdrop-filter: blur(7.8px);
+        border: 1px solid rgba(104, 104, 107, 0.3);
+    }
+    &__icon {
+        width: 42px;
+        color: #ffffff;
+    }
+}
+

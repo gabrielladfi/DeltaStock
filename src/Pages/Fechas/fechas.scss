@@ -1,0 +1,256 @@
+.fechas-num-radicacion__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    &__num-radicacion, &__fecha-radicacion {
+        width: 386px;
+        height: 38px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 0 16px;
+        gap: 12px;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+.fechas-num-radicacion__container__tramite {
+    width: 100%;
+    max-width: 788px;
+    height: 38px;
+    border: 1px solid #000;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+}
+
+.observaciones-num-radicacion--fecha {
+    font-size: 16px;
+}
+
+.section-fecha {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 48px;
+}
+
+
+.table-user-fecha {
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 12px;
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        &__thead {
+            background-color: #000;
+            color: #fff;
+            &__tr {
+                width: 100%;
+                height: 32px;
+                
+                &__th-one {
+                    width: 320px;
+                    padding: 12px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+                &__th-two {
+                    width: 30%;
+                    padding: 12px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+        &__tbody {
+            &__tr {
+                &__td {
+                    padding: 12px;
+                    border-top: 1px solid #000;
+                }
+            }
+        }
+    }
+}
+
+.tr-user-fecha {
+    padding: 12px 0;
+}
+
+.td-user--green {
+    padding: 12px 0;
+    background-color: greenyellow;
+    font-size: 12px;
+}
+
+.td-curador--blue {
+    padding: 12px 0;
+    background-color: rgba(0, 0, 253, 0.87);
+    font-size: 12px;
+    color: #fff;
+}
+
+.fecha--input {
+    width: 60px;
+    height: 28px;
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.yellow {
+    background-color: yellow;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.checkbox-fecha {
+    width: 18px;
+    height: 18px;
+}
+
+.dias-habiles {
+    width: 280px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #000;
+    border-bottom: none;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    &__h2 {
+        font-size: 14px;
+    }
+}
+
+.div-fecha--tablas--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 34px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.div-fecha--tablas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.div-fecha--tablas-vencimientos {
+    padding: 16px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 72px;
+    @media (max-width: 768px) {
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        margin-left: 48px;
+    }
+    &__title {
+        font-size: 14px;
+        background-color: red;
+        width: 100%;
+        height: 39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+.data-vencimientos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    &__item-one {
+        width: 68px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid red;
+        cursor: default;
+    }
+    &__item-two {
+        width: 40%;
+        height: 38px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid red;
+        color: red;
+        font-size: 14px;
+        padding-right: 4px;
+        cursor: default;
+    }
+    &__item-input {
+        width: 60%;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: default;
+    }
+}
+
+.data-vencimientos__item-two__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.data-vencimientos__items {
+    width: 202px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: default;
+}
+

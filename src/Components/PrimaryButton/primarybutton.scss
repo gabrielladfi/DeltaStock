@@ -1,0 +1,26 @@
+@use '../../Sass/mixins' as *;
+
+.primarybutton-button {
+    width: 260px;
+    min-height: 48px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #2D2C54;
+    cursor: pointer;
+    @include responsive(mobile) {
+        width: 258px;
+        height: 48px;
+    }
+    color: #fff;
+    &__icon {
+        width: 24px;
+    }
+    &__p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

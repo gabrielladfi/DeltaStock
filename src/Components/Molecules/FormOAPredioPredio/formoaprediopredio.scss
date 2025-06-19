@@ -1,0 +1,66 @@
+.form-oa-predio-predio__container {
+    width: 380px;
+    height: 816px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    background-color: #fff;
+    overflow-y: auto;
+    border-radius: 20px;
+    @media screen and (max-width: 1024px) {
+        align-items: center;
+    }
+    &__header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__title {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        &__button {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            &__icon {
+                width: 24px;
+            }
+        }
+    }
+}
+
+.form-oa-predio-predio__container-input {
+    width: 16.125rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.form-oa-predio-predio__input-text {
+    width: 16.125rem;
+    height: 2.875rem;
+    padding: 0 1rem;
+    border-radius: 4px;
+    border: 2px solid #030303;
+}
+
+.form-oa-predio-predio__input-number {
+    width: 16.125rem;
+    height: 2.875rem;
+    padding: 0 1rem;
+    border-radius: 4px;
+    border: 2px solid #030303;
+}

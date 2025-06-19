@@ -1,0 +1,27 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.step-content-nr {
+    width: 100%;
+    height: calc(100vh - 564px);
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: auto;
+    background-color: $font-color-secondary;
+    @include responsive(tablet) {
+        width: 100%;
+        padding: 0 1.5rem;
+        height: calc(100vh - 14.25rem);
+        overflow-y: auto;
+    }
+    @include responsive(desktop) {
+        width: 100%;
+        padding: 0 2rem;
+        height: calc(100vh - 15.4375rem);
+        overflow-y: auto;
+    }
+}

@@ -1,0 +1,44 @@
+.card-reportes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+    width: 320px;
+    height: 82px;
+    background-color: #FEF7FF;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    &__circle {
+        width: 52px;
+        height: 52px;
+        background-color: #EBDDFF;
+        border-radius: 50%;
+    }
+    &__content {
+        width: calc(100% - 150px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        &__button {
+            width: 75%;
+            height: 28px;
+            border: none;
+            border-radius: 16px;
+            color: #fff;
+            background-color: #007AFF;
+            cursor: pointer;
+        }
+    }
+    &__div-icon {
+        width: 52px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

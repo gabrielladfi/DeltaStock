@@ -1,0 +1,55 @@
+@use '../../Sass/_variables.scss' as *;
+@use '../../Sass/_mixins.scss' as *;
+
+.reporte-catastarl-modal-buscador-reportes {
+    width: 80%;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: $border-radius-md;
+    
+    @include responsive(mobile) {
+        max-height: 90%;
+        overflow-y: auto;
+        justify-content: flex-start;
+        
+    }
+    @include responsive(tablet-small) {
+        max-height: 90%;
+        overflow-y: auto;
+        justify-content: flex-start;
+    }
+    @include responsive(tablet) {
+        max-height: 90%;
+        overflow-y: auto;
+        justify-content: flex-start;
+    }
+
+    
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 24px;
+        
+        &__button {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            &__icon {
+                width: 24px;
+                color: #000;
+            }
+        }
+    }
+}

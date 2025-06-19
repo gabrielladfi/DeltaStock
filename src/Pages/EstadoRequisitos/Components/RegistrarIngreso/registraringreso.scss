@@ -1,0 +1,99 @@
+.registraringreso-container {
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    overflow-y: auto;
+    padding-bottom: 48px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 48px;
+        border-bottom: 1px solid #E0E0E0;
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+}
+
+.registraringreso--body {
+    width: 100%;
+    height: auto;
+    margin-left: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.registraringreso--form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    width: 45%;
+    text-align: left;
+}
+
+.registraringreso--input {
+    border: 1px solid #030303;
+}
+
+.registraringreso-container__buttons {
+    width: 100%;
+    padding-left: 96px;
+    margin-top: 24px;
+}
+
+.registraringreso-container__close {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-right: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__button {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #030303;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__icon {
+            width: 20px;
+        }
+    }
+}
+
+.registraringreso--textarea {
+    border: 1px solid #030303;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 12px;
+}
+.registraringreso--textarea-big {
+    border: 1px solid #030303;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 12px;
+}
+
+.agregarrequisito--form-div-big {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}

@@ -1,0 +1,103 @@
+@use '../../Sass/mixins' as *;
+@use '../../Sass/variables' as *;
+
+.menucard--p {
+    width: 10.0625rem;
+    height: 8.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8125rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #887777;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: $shadow-button;
+    @include responsive(tablet) {
+        width: 9rem;
+        height: 9.5rem;
+        gap: .8125rem;
+    }
+    @include responsive(desktop) {
+        width: 13.4375rem;
+        height: 10.375rem;
+        gap: .9375rem;
+        padding: 0 1rem;
+    }
+    &__icon {
+        width: 1.5rem;
+        color: $primary-gray-light;
+        @include responsive(tablet) {
+            width: 2.5rem;
+        }
+        @include responsive(desktop) {
+            width: 2.5rem;
+        }
+    }
+    &__div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; 
+        &__p {
+            text-align: center;
+            line-height: 1rem;
+            font-size: $font-size-md;
+            font-weight: $font-weight-regular;
+            color: $font-color-primary;
+        }
+        &__icon {
+            width: 1.5rem;
+            color: $primary-gray-light;
+            @include responsive(mobile) {
+                width: 1.125rem;
+            }
+        }
+    }
+}
+
+
+.menucard--p:hover {
+    transition: all 0.3s ease;
+    background-color: $primary-hover-blue;
+    color: #030303;
+    .menucard--p__icon {
+        color: $primary-button-color;
+    }
+}
+
+.menucard-tv {
+    width: 120px;
+    height: 90px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #887777;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &__div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: left;
+        &__p {
+            font-size: 0.5rem;
+            font-weight: 300;
+        }
+        &__icon {
+            width: 1rem;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@use '../../../Sass/mixins' as *;
+
+.boxalertnotification {
+    width: 95%;
+    max-width: 560px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__title {
+        min-width: 100%;
+        height: 84px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 24px;
+        color: #f3f4f8;
+        background-color: #383675;
+        @include responsive(mobile) {
+            height: 60px;
+        }
+        &__h2 {
+            font-size: 20px;
+            font-weight: 500;
+            @include responsive(mobile) {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+        height: 200px;
+        background-color: #CFCFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        @include responsive(mobile) {
+            height: 150px;
+        }
+        &__p {
+            width: 55%;
+            font-size: 16px;
+        }
+        &__img {
+            width: 134px;
+            height: 134px;
+            object-fit: cover;
+            object-position: center;
+            @include responsive(mobile) {
+                width: 100px;
+            }
+        }
+    }
+    &__button {
+        width: 100%;
+        height: 78px;
+        background-color: #CFCFF5;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.boxalertnotification__content__img-container {
+    width: 134px;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,136 @@
+@use '../../Sass/_mixins' as *;
+
+.tablaprimariaventanilla {
+    @include table-styles(22, 10%);
+}
+
+.container-tabla-primaria {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+    &__title {
+        width: 100%;
+        height: 38px;
+        background-color: #2D2C54;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__p {
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        height: auto;
+        
+        
+        &__thead {
+            width: 100%;
+            height: 38px;
+            background-color: rgb(219, 219, 219);
+            &__tr {
+                width: 100%;
+                height: 100%;
+                &__th--first {
+                    width: 40%;
+                    height: 100%;
+                    font-size: 16px;
+                    color: #030303;
+                    font-weight: 500;
+                    border-collapse: collapse;
+
+                }
+                &__th {
+                    width: 20%;
+                    height: 100%;
+                    font-size: 16px;
+                    color: #030303;
+                    font-weight: 500;
+                    
+                    border-collapse: collapse;
+                }
+            }
+        }
+
+        &__tbody {
+            width: 100%;
+            height: auto;
+            &__tr {
+                width: 100%;
+                height: 38px;
+                border-bottom: 1px solid rgb(219, 219, 219);
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.container-tabla-primaria__table__thead__tr {
+    background-color: #2D2C54;
+    &__th {
+        min-width: 140px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.container-tabla-primaria--molecule {
+    height: 320px;
+}
+
+.tabla-primaria__delete--button {
+    width: 80px;
+    height: 24px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.tabla-primaria-ventanilla-sticker {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    &__icon {
+        width: 18px;
+    }
+}
+.resaltar {
+    font-size: 16px;
+    font-weight: 600;
+}
+.description-tabla-ventanilla__th:nth-child(6) {
+    min-width: 400px;
+}
+
+.container-tabla-primaria--molecule--ventanilla {
+    height: 310px;
+}
+
+.container-tabla-primaria__table--ventanilla {
+    position: relative;
+    &__thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}
+

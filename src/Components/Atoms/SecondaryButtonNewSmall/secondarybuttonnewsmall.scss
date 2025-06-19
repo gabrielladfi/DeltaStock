@@ -1,0 +1,33 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.secondary-button-new-small {
+    width: 17.25rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: $font-color-primary;
+    border-radius: $border-radius-sm;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-md;
+    font-weight: $font-weight-regular;
+    text-transform: capitalize;
+    border: 1px solid $primary-gray-light-3;
+    @include responsive(tablet) {
+        width: 15rem;
+        height: 3.125rem;
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        text-transform: capitalize;
+    }
+    @include responsive(desktop) {
+        width: 15rem;
+        height: 3.125rem;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,211 @@
+.
+├── README.md
+├── archivodePrueba.js
+├── crearComponente.js
+├── crearContextos.js
+├── eslint.config.js
+├── estructura.txt
+├── index.html
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── public
+│   └── vite.svg
+├── src
+│   ├── Adapters
+│   │   ├── AdapterVentanilla.js
+│   │   ├── adapterAdministrativeAct.js
+│   │   ├── adapterCargoVariableVivienda.js
+│   │   ├── adapterCodigosCiiu.js
+│   │   ├── adapterListadoOficios.js
+│   │   ├── adapterTaxRegistartion.js
+│   │   └── adaptersFetch.js
+│   ├── Api
+│   │   ├── globalServiceHTTP.js
+│   │   ├── useServiceGet.jsx
+│   │   ├── useServicePost.jsx
+│   │   └── useServicePut.jsx
+│   ├── App
+│   │   ├── App.jsx
+│   │   └── App.scss
+│   ├── Components
+│   │   ├── Atoms
+│   │   ├── BuscadorPorNumeroRadicacion
+│   │   ├── ButtonChat
+│   │   ├── ContentDesktop
+│   │   ├── DropdownSearch
+│   │   ├── FooterBasic
+│   │   ├── FormGenerarValla
+│   │   ├── FormularioEncargados
+│   │   ├── Layout
+│   │   ├── MenuCard
+│   │   ├── MenuCategoriasObservaciones
+│   │   ├── MenuCategoriasProcedentes
+│   │   ├── MenuOtrasActuaciones
+│   │   ├── Modal
+│   │   ├── Molecules
+│   │   ├── NavBar
+│   │   ├── Pages
+│   │   ├── PaginaEnConstruccion
+│   │   ├── PrimaryButton
+│   │   ├── QRCodeComponent
+│   │   ├── SectionCloserFormsModal
+│   │   ├── SectionClosermodals
+│   │   ├── SectionMenu
+│   │   ├── SectionShowNumeroRadicacion
+│   │   ├── TablaListadoOficios
+│   │   ├── TablaListadoRadicaciones
+│   │   ├── TablaPrimaria
+│   │   └── TablaPrimariaVentanilla
+│   ├── Context
+│   │   ├── AuthContextContext.jsx
+│   │   └── GlobalContext.jsx
+│   ├── Hooks
+│   │   ├── useAccesoLimitadoestandar.jsx
+│   │   ├── useDeviceScale.jsx
+│   │   ├── useFetchDelete.jsx
+│   │   ├── useFetchGet.jsx
+│   │   ├── useFetchPost.jsx
+│   │   ├── useFetchPut.jsx
+│   │   ├── useFirmas.jsx
+│   │   ├── useLeaveTask.jsx
+│   │   ├── useLogin.jsx
+│   │   ├── useLogout.jsx
+│   │   ├── useNavigateProvider.jsx
+│   │   ├── useNoInicioSesion.jsx
+│   │   ├── useRoutesProvider.jsx
+│   │   ├── useServiceDelete.jsx
+│   │   ├── useServicesGet.jsx
+│   │   ├── useServicesPost.jsx
+│   │   ├── useServicesPut.jsx
+│   │   └── useVerifyToken.jsx
+│   ├── Pages
+│   │   ├── ActosAdministrativos
+│   │   ├── AdministrativeAct
+│   │   ├── AgregarNuevoPredio
+│   │   ├── BucadorDeResponsables
+│   │   ├── BuscadorDeActosAdministrativos
+│   │   ├── BuscadorDeCambioDeResponsable
+│   │   ├── BuscadorDeExpedientes
+│   │   ├── BuscadorDeFechas
+│   │   ├── BuscadorDeGenerarValla
+│   │   ├── BuscadorDeHistorias
+│   │   ├── BuscadorDeLiquidaciones
+│   │   ├── BuscadorDeObservaciones
+│   │   ├── BuscadorDeOficios
+│   │   ├── BuscadorDeOtrosActos
+│   │   ├── BuscadorDeOtrosActosHistorias
+│   │   ├── BuscadorDeOtrosActosTitulares
+│   │   ├── BuscadorDePredios
+│   │   ├── BuscadorDeTitulares
+│   │   ├── BuscadorDeViabilidadTecnica
+│   │   ├── BuscadorEntradaVentanilla
+│   │   ├── BuscadorProcedenteJuridico
+│   │   ├── BuscadorTodosOficiosEntradaVentanilla
+│   │   ├── BuscadorTramitesRadicacion
+│   │   ├── CambioResponsables
+│   │   ├── CargoVariableVivienda
+│   │   ├── Configuracion
+│   │   ├── CrearNuevaSolicitudNR
+│   │   ├── DataDireccionNomenclatura
+│   │   ├── EntradaVentanilla
+│   │   ├── EstadoRequisitos
+│   │   ├── Fechas
+│   │   ├── Historias
+│   │   ├── InformacionPredio
+│   │   ├── LiquidacionesExpensas
+│   │   ├── Login
+│   │   ├── Menu
+│   │   ├── MenuLiquidaciones
+│   │   ├── MenuNumeroRadicacion
+│   │   ├── NuevaRadicacion
+│   │   ├── Observaciones
+│   │   ├── Oficios
+│   │   ├── OtrasActuacionesHistoria
+│   │   ├── OtrasActuacionesListado
+│   │   ├── OtrasActuacionesListadoHistorias
+│   │   ├── OtrasActuacionesListadoPredios
+│   │   ├── OtrasActuacionesListadoTitulares
+│   │   ├── OtrasActuacionesNuevoTramite
+│   │   ├── OtrasActuacionesPredio
+│   │   ├── OtrasActuacionesTitulares
+│   │   ├── Predio
+│   │   ├── ProcedentesArquitectonicos
+│   │   ├── ProcedentesIngenieria
+│   │   ├── ProcedentesJuridicos
+│   │   ├── ReporteCatastral
+│   │   ├── ReporteDane
+│   │   ├── Reportes
+│   │   ├── Responsables
+│   │   ├── SearchAdministrativeAct
+│   │   ├── SearchTaxRegistration
+│   │   ├── TablaDeResultadosLogico
+│   │   ├── TaxRegistration
+│   │   ├── Titulares
+│   │   └── ViabilidadTecnica
+│   ├── Sass
+│   │   ├── _inputsLabel.scss
+│   │   ├── _mixins.scss
+│   │   ├── _variables.scss
+│   │   └── globalSass.scss
+│   ├── Services
+│   │   └── ServicionuevaRadicacion.js
+│   ├── Store
+│   │   ├── informacionExpedienteStore.js
+│   │   ├── useDataAdministrativeActRowTableStore.js
+│   │   ├── useDataFirmas.js
+│   │   ├── useDataFirmasObservacionesStore.js
+│   │   ├── useDataTableItemLandOtherActsStore.js
+│   │   ├── useDataTableItemOtherActsStore.js
+│   │   ├── useDataVentanillaRowTableStore.js
+│   │   └── useUpgradeHistoryOtherActs.js
+│   ├── Utils
+│   │   ├── AreaCategoriaObservaciones.js
+│   │   ├── ProcedenteModelo.js
+│   │   ├── SubEtapasHistorias.js
+│   │   ├── UrlData.js
+│   │   ├── dataInputNuevoTramiteOtrosActos.js
+│   │   ├── dataInputsNuevaRadicacion.js
+│   │   ├── dataObjetoFirmas.js
+│   │   ├── encargadosCuraduriaData.js
+│   │   ├── functions.js
+│   │   ├── generateQRCode.js
+│   │   ├── handleInputs.js
+│   │   ├── handleTrasnformDate.js
+│   │   ├── handleUpdateFirmas.js
+│   │   ├── manejoLocalStorageNumeroRadicacion.js
+│   │   └── validatorsFunctions.js
+│   ├── assets
+│   │   ├── checkLog.svg
+│   │   ├── checkLogo.svg
+│   │   ├── check_logo2.png
+│   │   ├── contruccionimg.webp
+│   │   ├── icons
+│   │   ├── iconsmenu
+│   │   ├── images
+│   │   ├── imgfondo.jpg
+│   │   ├── linkqr.jpg
+│   │   ├── logos
+│   │   ├── logosvg.svg
+│   │   ├── texturas
+│   │   ├── warning_logo.png
+│   │   ├── warninglo.svg
+│   │   └── warninglogo.svg
+│   ├── index.scss
+│   ├── main.jsx
+│   └── stories
+│       ├── Button.jsx
+│       ├── Button.stories.js
+│       ├── Configure.mdx
+│       ├── Header.jsx
+│       ├── Header.stories.js
+│       ├── Page.jsx
+│       ├── Page.stories.js
+│       ├── assets
+│       ├── button.css
+│       ├── header.css
+│       └── page.css
+├── vite.config.js
+└── vitest.workspace.js
+
+112 directories, 96 files

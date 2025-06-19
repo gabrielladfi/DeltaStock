@@ -1,0 +1,134 @@
+@use '../../Sass/_mixins' as *;
+@use '../../Sass/_variables' as *;
+
+.container-title--buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.container-form-administrative-act {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: 1116px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container-form-administrative-act--buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: 1116px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container-title-administrative-act {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: 1116px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.administrativeactcontainertable {
+    width: 100%;
+    min-height: 450px;
+    overflow-y: auto;
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        &__thead {
+            width: 100%;
+            height: 3.25rem;
+            &__tr {
+                &__th--one, &__th--three {
+                    width: 25%;
+                    min-height: 3rem;
+                    text-align: center;
+                    color: $primary-gray-light;
+                    font-weight: $font-weight-medium;
+                }
+                &__th--two {
+                    width: 50%;
+                    min-height: 3rem;
+                    text-align: center;
+                    color: $primary-gray-light;
+                    font-weight: $font-weight-medium;
+                }
+
+            }
+        }
+        &__tbody {  
+            width: 100%;
+            height: auto;
+            &__tr {
+                height: 3.25rem;
+                &:nth-child(odd) {
+                    background-color: $primary-background-input;
+                }
+                &:nth-child(even) {
+                    background-color: $primary-color;
+                }
+                
+                &__td-one, &__td-three {
+                    width: 25%;
+                    min-height: 3.25rem;
+                    text-align: center;
+                    border: none;
+                }
+                &__td-two {
+                    width: 50%;
+                    min-height: 3.25rem;
+                    text-align: center;
+                    border: none;
+                }
+                &__td-three__button {
+                    width: 5rem;
+                    height: 28px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: $primary-blue;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    @include responsive(tablet-small) {
+        min-height: calc(100% - 415px);
+        
+    }
+    @include responsive(tablet) {
+        min-height: calc(100% - 415px);
+        
+    }
+    @include responsive(desktop) {
+        min-height: calc(100% - 415px);
+    }
+   
+
+
+}

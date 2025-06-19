@@ -1,0 +1,106 @@
+.form-register-area {
+    width: 90%;
+    max-width: 520px;
+    height: 70%;
+    padding: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    overflow-y: auto;
+    &__header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+            &__p {
+                font-weight: 200;
+                font-size: 20px;
+            }
+        }
+        &__button {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            &__icon {
+                width: 24px;
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;&__div {
+            width: 100%;
+            min-height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+            padding-top: 8px;
+            border-top: 1px solid #F3B800;
+            &__button {
+                width: auto;
+                height: auto;
+                padding: 8px 12px;
+                border-radius: 4px;
+                border: none;
+                background-color: #2D2C54;
+                color: #fff;
+            }
+            &__input--container {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 8px;
+    
+            }
+            &__label {
+                font-size: 14px;
+                font-weight: 300;
+                color: #2D2C54;
+            }
+            &__input {
+                width: 260px;
+                height: 42px;
+                padding-left: 16px;
+                border: 2px solid #000;
+                border-radius: 8px;
+            }
+            &__input--error {
+                font-size: 14px;
+                font-weight: 300;
+                color: red;
+            }
+        }
+    }
+    &__buttons {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

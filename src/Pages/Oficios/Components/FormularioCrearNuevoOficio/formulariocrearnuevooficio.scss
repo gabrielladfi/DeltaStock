@@ -1,0 +1,14 @@
+.formulariocrearnuevooficio--container {
+    width: 90%;
+    height: 750px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    gap: 24px;
+    overflow-y: auto;
+}

@@ -1,0 +1,59 @@
+@use '../../../Sass/mixins.scss' as *;
+@use '../../../Sass/_variables.scss' as *;
+
+.inputdatenr {
+    width: 20.1875rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    @include responsive(tablet) {
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    @include responsive(desktop) {
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__label {
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        line-height: 1rem;
+        color: $font-color-primary;
+    }
+    &__input-container {
+        position: relative;
+        min-width: 18.4375rem;
+        min-height: 3.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include responsive(desktop) {
+            width: 40.625rem;
+        }
+        &__icon {
+            position: absolute;
+            left: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &__input {
+            width: 100%;
+            height: 3.125rem;
+            padding-left: 1rem;
+            border: $border-width-sm solid $font-color-tertiary;
+            border-radius: $border-radius-md;
+            background-color: $primary-color;
+            padding-right: 1rem;
+        }
+    }
+    
+}

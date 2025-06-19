@@ -1,0 +1,44 @@
+@use './Sass/_variables' as *;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+html {
+  font-family: $font;
+}
+
+select {
+  appearance: none; /* Eliminar estilos predeterminados */
+  -webkit-appearance: none; /* Para Safari/Chrome */
+  -moz-appearance: none; /* Para Firefox */
+}
+
+/* Reset de estilos por defecto para tablas */
+table {
+  border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+  border-spacing: 0;         /* Quita el espaciado entre celdas */
+  width: 100%;               /* Opcional: ajusta al contenedor */
+}
+
+th, td {
+  padding: 0;                /* Elimina el relleno interno */
+  margin: 0;                 /* Quita márgenes */
+  border: none;              /* Quita bordes */
+  text-align: center;          /* Alinea el texto a la izquierda */
+  vertical-align: center;       /* Alinea verticalmente al inicio */
+}
+
+thead, tbody, tfoot {
+  margin: 0;                 /* Sin margen */
+  padding: 0;                /* Sin relleno */
+  border: none;              /* Sin bordes */
+}
+
+td {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+}

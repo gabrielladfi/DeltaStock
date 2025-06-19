@@ -1,0 +1,45 @@
+import { Meta, Story, Canvas } from '@storybook/blocks';
+import  PrimaryInputLiquidaciones  from '@/Components/Molecules/PrimaryInputLiquidaciones/index.jsx';
+
+<Meta title="Components/Molecules/PrimaryInputLiquidaciones" component={PrimaryInputLiquidaciones} />
+
+# 📌 Documentación de PrimaryInputLiquidaciones
+<br/>
+
+    <PrimaryInputLiquidaciones labelText={'Label Text'} propPlaceholder={'Ingrese un Valor'} />
+
+<br/>
+
+# 📌 Propiedades de PrimaryInputLiquidaciones
+
+```md
+
+| Propiedad | Tipo | Por defecto | Descripción |
+|:---|:---|:---|:---|
+| label | string | 'Label' | Label del input |
+| placeholder | string | 'Placeholder' | Placeholder del input |
+| value | string | '' | Valor del input |
+| onChange | fn | Función que se ejecuta al cambiar el valor del input |
+
+```
+
+<br/>
+
+# 📌 Ejemplo de uso de PrimaryInputLiquidaciones
+
+```jsx
+import React, { useState } from 'react';
+import { PrimaryInputLiquidaciones } from '@/Components/Molecules/PrimaryInputLiquidaciones/index.jsx';
+
+const PrimaryInputLiquidacionesExample = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <PrimaryInputLiquidaciones
+      labelText="Label"
+      propPlaceholder="Placeholder"
+      propValue={value}
+      propFnInput={(e) => setValue(e.target.value)}
+    />
+  );
+};

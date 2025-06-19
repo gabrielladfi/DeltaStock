@@ -1,0 +1,59 @@
+.observaciones-num-radicacion {
+    font-size: 24px;
+    padding-left: 16px;
+    font-weight: 300;
+}
+.observaciones-buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.global-article-tabla-observaciones {
+    width: 100%;
+    height: auto;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.observgaciones-buttons-section {
+    margin-bottom: 82px;
+}
+
+.historias-encargados {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    background-color: #e7e4e4fd;
+    border-radius: 12px;
+}
+
+.trash{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &__icon {
+        width: 16px;
+    }
+
+}

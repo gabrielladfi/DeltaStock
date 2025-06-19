@@ -1,0 +1,48 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.navbarmobilebottom {
+    width: 100%;
+    height: 3.9375rem;
+    padding: 0 1.8125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../../assets/texturas/menumobile.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include responsive(tablet) {
+        display: none;
+    }
+    @include responsive(desktop) {
+        display: none;
+    }
+    &__button {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    &__button--perfil {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: $primary-color;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+}

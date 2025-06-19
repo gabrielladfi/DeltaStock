@@ -1,0 +1,31 @@
+@use '../../../Sass/mixins.scss' as *;
+@use '../../../Sass/_variables.scss' as *;
+
+.layoutcontent {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 3.875rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 3.875rem;
+    @include responsive(tablet) {
+        margin-top: 4.875rem;
+        max-height: calc(100dvh - 4.875rem);
+        overflow-y: hidden;
+        padding: 1.25rem;
+    }
+    @include responsive(desktop) {
+        margin-top: 5.9375rem;
+        height: calc(100dvh - 5.9375rem);
+        justify-content: flex-start;
+        overflow-y: hidden;
+        padding: 1.5rem;
+    }
+}
+.layoutcontent--menumobile-open {
+    overflow: hidden;
+}

@@ -1,0 +1,66 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/mixins.scss' as *;
+
+.statusnavigate {
+    width: 100%;
+    min-height: 3.875rem;
+    padding-left: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .625rem;
+    box-shadow: $shadow-button;
+    position: fixed;
+    z-index: 100;
+    background-color: $primary-color;
+    @include responsive(tablet) {
+        width: calc(100% - 16rem);
+        min-height: 4.875rem;
+        padding-left: 1.875rem;
+    }
+    @include responsive(desktop) {
+        width: calc(100% - 16rem);
+        min-height: 5.9375rem;
+        padding-left: 1.875rem;
+    }
+    &__span {
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        line-height: 1.5rem;
+        color: $font-color-gray-light;
+        @include responsive(tablet) {
+            font-size: $font-size-lg;
+            line-height: 1rem;
+            cursor: pointer;
+        }
+        @include responsive(desktop) {
+            font-size: $font-size-lg;
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: $font-color-gray;
+        @include responsive(tablet) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        @include responsive(desktop) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    &__span--active {
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        line-height: 1rem;
+        color: $font-color-purple-dark;
+        @include responsive(tablet) {
+            font-size: $font-size-lg;
+        }
+        @include responsive(desktop) {
+            font-size: $font-size-lg;
+        }
+    }
+}

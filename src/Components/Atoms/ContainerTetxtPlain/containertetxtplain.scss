@@ -1,0 +1,26 @@
+@use '../../../Sass/_variables' as *;
+@use '../../../Sass/_mixins' as *;
+
+.containertetxtplain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .25rem;
+    @include responsive(tablet) {
+        flex-direction: row;
+    }
+    @include responsive(desktop) {
+        flex-direction: row;
+    }
+    &__title {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $font-color-gray-light;
+    }
+    &__text {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: justify;
+    }
+}

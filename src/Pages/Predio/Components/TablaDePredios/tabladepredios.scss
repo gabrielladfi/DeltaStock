@@ -1,0 +1,63 @@
+@use '../../../../Sass/_mixins.scss' as *;
+
+.tablaDePredios {
+    overflow-x: auto;
+}
+.global-tabla__thead__tr__th-id {
+    width: 5%;
+    min-width: 48px;
+    font-size: 14px;
+}
+.global-tabla__thead__tr__th-radicacion {
+    width: 15%;
+    min-width: 168px;
+    font-size: 14px;
+}
+
+.global-tabla__thead__tr__th-catastral {
+    width: 80px;
+    font-size: 14px;
+}
+
+.global-tabla__thead__tr__th-matricula {
+    width: 15%;
+    min-width: 264px;
+    font-size: 14px;
+}
+
+.global-tabla__thead__tr__th-direccion-actual, .global-tabla__thead__tr__th-direccion-anterior {
+    width: 10%;
+    min-width: 150px;
+    font-size: 14px;
+    
+}
+
+.global-tabla__thead__tr__th-suelo {
+    width: 10%;
+    min-width: 184px;
+}
+
+.global-tabla__thead__tr__th-button {
+    width: 15%;
+    min-width: 120px;
+    font-size: 14px;
+}
+
+.tabla-font {
+    font-size: 13px;
+}
+
+.tabla-de-predios__button {
+    width: 80px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tablaprediosnew {
+    @include table-styles(9, 10%);
+}
+

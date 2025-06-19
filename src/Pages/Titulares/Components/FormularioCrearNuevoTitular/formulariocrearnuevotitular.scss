@@ -1,0 +1,61 @@
+@use '../../../../Sass/mixins' as *;
+
+.formulariocrearnuevotitular {
+    width: 95%;
+    max-width: 600px;
+    height: 85%;
+    max-height: 648px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    @include responsive(mobile) {
+        overflow-y: auto;
+        gap: 24px;
+    }
+
+    &__section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        padding: 24px 48px;
+    }
+
+    &__section--buttons {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 24px 48px;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    &__section--numradicacion {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 0 48px;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    
+}

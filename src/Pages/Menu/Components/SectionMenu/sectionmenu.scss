@@ -1,0 +1,27 @@
+@use '../../../../Sass/mixins' as *;
+
+.sectionmenu {
+    width: 100%;
+    min-height: calc(100% - 15rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .75rem;
+    overflow-y: auto;
+    @include responsive(tablet) {
+        min-height: calc(100% - 15.5625rem);
+        margin-bottom: 0;
+        justify-content: center;
+        gap: 22px;
+        padding-left: 1rem;
+    }
+    @include responsive(desktop) {
+        min-height: calc(100% - 21.25rem);
+        margin-bottom: 0;
+        justify-content: center;
+        gap: 2.5rem;
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,175 @@
+@use './_variables.scss' as *;
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: 767px) { // Puedes ajustar este valor según tus necesidades
+            @content;
+        }
+    } @else if $breakpoint == tablet-small {
+        @media (min-width: 768px) and (max-width: 1072px) {
+            @content;
+        }
+    }
+     @else if $breakpoint == tablet {
+        @media (min-width: 1073px) and (max-width: 1500px) {
+            @content;
+        }
+    } @else if $breakpoint == desktop {
+        @media (min-width: 1501px) {
+            @content;
+        }
+    } @else {
+        @media (min-width: #{$breakpoint}) {
+            @content;
+        }
+    }
+}
+
+@mixin table-styles($height-subtract, $column-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    @include responsive(mobile) {
+        min-height: 500px;
+    }
+    @include responsive(tablet-small) {
+        height: calc(100% - #{$height-subtract}rem);
+    }
+    @include responsive(tablet) {
+        height: calc(100% - #{$height-subtract}rem);
+    }
+    @include responsive(desktop) {
+        height: calc(100% - #{$height-subtract}rem);
+    }
+    &__table {
+        width: 100%;
+        height: auto;
+        &__thead {
+            width: 100%;
+            height: 52px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: $primary-color;
+            &__tr {
+                width: 100%;
+                height: 100%;
+                &__th {
+                    width: $column-width;
+                    height: 100%;
+                    text-align: center;
+                    font-size: $font-size-sm;
+                    color: $font-color-thead-table;
+                    font-weight: $font-weight-medium;
+                    padding: 0 8px;
+                    @include responsive(tablet-small) {
+                        font-size: $font-size-md;
+                    }
+                    @include responsive(tablet) {
+                        font-size: $font-size-md;
+                    }
+                    @include responsive(desktop) {
+                        font-size: $font-size-md;
+                    }
+                }
+            }
+        }
+        &__tbody {
+            width: 100%;
+            height: auto;
+            &__tr {
+                width: 100%;
+                height: 52px;
+                &:nth-child(even) {
+                    background-color: $primary-color;
+                }
+                &:nth-child(odd) {
+                    background-color: $primary-background-input;
+                }
+                &__td {
+                    width: $column-width;
+                    height: 100%;
+                    text-align: center;
+                    font-size: $font-size-sm;
+                    color: $font-color-primary;
+                    border-bottom: none;
+                    padding: 8px 8px;
+                    word-break: break-all;
+                    @include responsive(tablet-small) {
+                        font-size: $font-size-md;
+                        padding: 8px 8px;
+                    }
+                    @include responsive(tablet) {
+                        font-size: $font-size-md;
+                        padding: 8px 8px;
+                        cursor: pointer;
+                    }
+                    @include responsive(desktop) {
+                        font-size: $font-size-md;
+                        padding: 8px 8px;
+                        cursor: pointer;
+                    }
+                    &__button-ver-mas {
+                        width: 5rem;
+                        height: 1.75rem;
+                        border-radius: $border-radius-xs;
+                        border: none;
+                        background-color: $primary-blue;
+                        color: $primary-color;
+                        font-size: $font-size-sm;
+                        font-weight: $font-weight-light;
+                        text-align: center;
+                        cursor: pointer;
+                        
+                    }
+                    &__button-eliminar {
+                        margin: 0 auto;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: $border-radius-xs;
+                        border: none;
+                        background-color: $font-color-error;
+                        color: $primary-color;
+                        font-size: $font-size-sm;
+                        font-weight: $font-weight-light;
+                        text-align: center;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__icon {
+                            width: 24px;
+                            color: $primary-color;
+                        }
+                    }
+                    &__button-edit {
+                        margin: 0 auto;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: $border-radius-xs;
+                        border: none;
+                        background-color: $primary-blue;
+                        color: $primary-color;
+                        font-size: $font-size-sm;
+                        font-weight: $font-weight-light;
+                        text-align: center;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &__icon {
+                            width: 16px;
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+  

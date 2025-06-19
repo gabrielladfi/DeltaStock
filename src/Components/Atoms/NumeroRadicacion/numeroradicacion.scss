@@ -1,0 +1,41 @@
+@use '../../../Sass/mixins.scss' as *;
+@use '../../../Sass/_variables.scss' as *;
+
+.numeroradicacion {
+    width: auto;
+    height: 3.375rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    @include responsive(tablet) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .5rem;
+        padding: 0;
+    }
+    @include responsive(desktop) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .5rem;
+        padding: 0;
+    }
+    &__h3 {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+        line-height: 1.5rem;
+        color: $font-color-primary;
+        line-height: 1.25rem;
+    }
+    &__p {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+        line-height: 1.5rem;
+        color: $font-color-primary;
+        line-height: 1.25rem;
+    }
+}

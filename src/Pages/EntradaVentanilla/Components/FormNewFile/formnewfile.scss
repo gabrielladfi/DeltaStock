@@ -1,0 +1,58 @@
+.container-form-post-new-file {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 90%;
+    max-width: 710px;
+    height: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.primaryinputliquidaciones-div {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    &__label {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        text-align: left;
+    }
+    &__input {
+        width: 200px;
+        height: 38px;
+        padding-left: 16px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", serif;
+        &:focus {
+            outline: none;
+            border: 2px solid #030303;
+        }
+    }
+}
+
+.form-new-file-container--inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.modal-basic-new {
+    width: 90%;
+    max-width: 35.75rem;
+    min-height: auto;
+    max-height: 90%;
+    background-color: $primary-color;
+    border-radius: $border-radius-md;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__button {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            &__icon {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+.tax-registration-container-inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    @media (max-width: 1200px) {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+.container-tax-registration-buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}

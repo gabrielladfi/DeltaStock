@@ -1,0 +1,50 @@
+@use '../../../Sass/_variables.scss' as *;
+@use '../../../Sass/_mixins.scss' as *;
+
+.input-checkbox-new {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    &__input {
+        width: 1.25rem;
+        height: 1.25rem;
+        appearance: none;
+        border: 2px solid $primary-blue;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+
+        &:checked {
+            background-color: $primary-blue;
+            border: none;
+            border-radius: 50%;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0.25rem;
+                top: 0.125rem;
+                width: 0.5rem;
+                height: 0.25rem;
+                border-top: none;
+                border-right: none;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+    &__label {
+        width: 100%;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+        color: $font-color-primary;
+        line-height: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+.sectioncloserformsmodal--section-de-cerrado-modales__close {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__h2 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+    }
+    &__button {
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__icon {
+            width: 28px;
+        }
+    }
+}

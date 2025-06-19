@@ -1,0 +1,87 @@
+@use '../../../Sass/mixins' as *;
+
+.buttoninfo {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68686B;
+    position: fixed;
+    right: 48px;
+    bottom: 120px;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    @include responsive(mobile) {
+        width: 48px;
+        right: 24px;
+        bottom: 90px;
+        right: 16px;
+        background: rgba(104, 104, 107, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        -webkit-backdrop-filter: blur(7.8px);
+        border: 1px solid rgba(104, 104, 107, 0.3);
+    }
+    &__icon {
+        width: 42px;
+        color: #ffffff;
+    }
+    &__p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        @include responsive(mobile) {
+            display: none;
+        }
+    }
+}
+
+.buttoninfo__icon--open {
+    display: none;
+}
+
+.buttoninfo__close--inactive {
+    display: none;
+}
+
+.buttoninfo__close--active {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttoninfo__close {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.buttoninfo--open {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.buttoninfo__article--active {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.buttoninfo__article--inactive {
+    display: none;
+}

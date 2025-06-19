@@ -1,0 +1,21 @@
+.crearnuevasolicitudnr--section {
+    display: flex;
+    flex-direction: column;
+}
+.crearnuevasolicitudnr__div {
+    width: 100%;
+    height: auto;
+    padding-left: 62px;
+}
+
+.crearnuevasolicitudnr--section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.crearnuevasolicitudnr__div--buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
