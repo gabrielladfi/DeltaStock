@@ -71,6 +71,8 @@ import AAFabricantes from "@/Pages/AAFabricantes";
 import AAProveedores from "@/Pages/AAProveedores";
 import AAPiezas from "@/Pages/AAPiezas";
 import AAOrdenesDeCompra from "@/Pages/AAOrdenesDeCompra";
+import AAProyectos from "@/Pages/AAProyectos";
+import AATareas from "@/Pages/AATareas";
 
 function useRoutesProvider() {
 
@@ -162,6 +164,8 @@ function useRoutesProvider() {
             { path: '/proveedores', element: <AAProveedores /> },
             { path: '/piezas', element: <AAPiezas /> },
             { path: '/ordenes-de-compra', element: <AAOrdenesDeCompra /> },
+            { path: '/proyectos', element: <AAProyectos /> },
+            { path: '/tareas', element: <AATareas /> },
         ])
       
         return routes

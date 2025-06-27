@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { ChevronDownIcon, ChevronUpIcon, FolderMinusIcon, DocumentTextIcon, Cog6ToothIcon, HomeIcon, ClipboardDocumentListIcon, CpuChipIcon, UsersIcon, WrenchScrewdriverIcon, CircleStackIcon, GlobeAmericasIcon } from '@heroicons/react/24/outline';
+import { Cog6ToothIcon, HomeIcon, ClipboardDocumentListIcon, UsersIcon, WrenchScrewdriverIcon, CircleStackIcon, GlobeAmericasIcon, BeakerIcon, ClipboardDocumentCheckIcon } from '@heroicons/react/24/outline';
 import './menuvertical.scss'
 import { useNavigateProvider } from '@/Hooks/useNavigateProvider';
 import { GlobalState } from '@/Context/GlobalContext';
@@ -20,7 +20,9 @@ function MenuVertical() {
         navigateToFabricantes,
         navigateToProveedores,
         navigateToPiezas,
-        navigateToOrdenesDeCompra
+        navigateToOrdenesDeCompra,
+        navigateToProyectos,
+        navigateToTareas
     } = useNavigateProvider()
 
     function navigateConfiguracion(parametro) {
@@ -85,6 +87,20 @@ function MenuVertical() {
             subOptions: [],
             disabled: true,
             fn: () => navigateToUbicaciones(),
+        },
+        {
+            icon: <BeakerIcon className='MenuVertical__icon' />,
+            label: 'Proyectos',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToProyectos(),
+        },
+        {
+            icon: <ClipboardDocumentCheckIcon className='MenuVertical__icon' />,
+            label: 'Tareas',
+            subOptions: [],
+            disabled: true,
+            fn: () => navigateToTareas(),
         },
         
         

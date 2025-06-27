@@ -1,0 +1,156 @@
+.dnd-column {
+    background-color: #E8E9ED;
+    min-width: 270px;
+    max-width: 270px;
+    height:90%;
+    min-height: 320px;
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 24px;
+    
+    &__h2 {
+        width: 100%;
+        color: #030303;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+    }
+    &__container-tasks {
+        width: 100%;
+        height: 100%;
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+.dnd-column-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.dnd-column-header__div-color {
+    width: 25px;
+    height: 10px;
+    border-radius: 4px;
+}
+
+.dnd-column-header__div-color-0 {
+    background-color: #ff7300;
+}
+
+.dnd-column-header__div-color-1 {
+    background-color: #1E90FF;
+}
+
+.dnd-column-header__div-color-2 {
+    background-color: #6d1eff;
+}
+
+.dnd-column-header__div-color-3 {
+    background-color: #ffd61e;
+}
+
+.dnd-column-header__div-color-4 {
+    background-color: #f81eff;
+}
+
+.dnd-column-header__div-color-5 {
+    background-color: #1effff;
+}
+
+.dnd-column-header__div-color-6 {
+    background-color: #ceff1e;
+}
+
+.dnd-column-header__div-color-7 {
+    background-color: #050505;
+}
+.dnd-column-header__div-color-8 {
+    background-color: #f70000;
+}
+
+.dnd-column-header__div-color-9 {
+    background-color: #1df700;
+}
+.dnd-column-header__div-color-10 {
+    background-color: #ff7300;
+}
+
+.dnd-column-header__div-color-11 {
+    background-color: #1E90FF;
+}
+
+.dnd-column-header__div-color-12 {
+    background-color: #6d1eff;
+}
+
+.dnd-column-header__div-color-13 {
+    background-color: #ffd61e;
+}
+
+.dnd-column-header__div-color-14 {
+    background-color: #f81eff;
+}
+
+.dnd-column-header__div-color-15 {
+    background-color: #1effff;
+}
+
+.dnd-column-header__div-color-16 {
+    background-color: #ceff1e;
+}
+
+.dnd-column-header__div-color-17 {
+    background-color: #050505;
+}
+.dnd-column-header__div-color-18 {
+    background-color: #f70000;
+}
+
+.dnd-column-header__div-color-19 {
+    background-color: #1df700;
+}
+
+
+.dnd-column__total-tasks {
+    width: 100%;
+    &__p {
+        color: #030303;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight:300;
+    }
+}
+
+.dnd-column__container-tasks::-webkit-scrollbar {
+    width: 3px;
+    
+} 
+.dnd-column__container-tasks::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 50%;
+}
+
+.dnd-column__container-tasks::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 50%;
+}
+
+

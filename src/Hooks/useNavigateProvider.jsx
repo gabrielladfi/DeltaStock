@@ -126,7 +126,8 @@ function useNavigateProvider() {
     const navigateToProveedores = () => {navigate('/proveedores')}
     const navigateToPiezas = () => {navigate('/piezas')}
     const navigateToOrdenesDeCompra = () => {navigate('/ordenes-de-compra')}
-
+    const navigateToProyectos = () => {navigate('/proyectos')}
+    const navigateToTareas = () => {navigate('/tareas')}
 
     return {
         navigateToNuevaRadicacion,
@@ -196,7 +197,9 @@ function useNavigateProvider() {
         navigateToFabricantes,
         navigateToProveedores,
         navigateToPiezas,
-        navigateToOrdenesDeCompra
+        navigateToOrdenesDeCompra,
+        navigateToProyectos,
+        navigateToTareas
     }
 }
 

@@ -1,0 +1,5 @@
+@use '../../../Sass/_mixins' as *;
+
+.aatablastock {
+    @include table-styles(10, 10);
+}

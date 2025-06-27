@@ -82,7 +82,9 @@ function Menu() {
         navigateToFabricantes,
         navigateToProveedores,
         navigateToPiezas,
-        navigateToOrdenesDeCompra
+        navigateToOrdenesDeCompra,
+        navigateToProyectos,
+        navigateToTareas
     } = useNavigateProvider()
 
     const  userType  = getDataUser(); // ✅ Se obtiene el tipo de usuario
@@ -138,6 +140,8 @@ function Menu() {
         {id: 5, name: 'Proveedores', trigger: navigateToProveedores, icon: titularesicon},
         {id: 6, name: 'Piezas', trigger: navigateToPiezas, icon: responsablesicon}, 
         {id: 7, name: 'Ordenes de compra', trigger: navigateToOrdenesDeCompra, icon: responsablesicon}, 
+        {id: 8, name: 'Proyectos', trigger: navigateToProyectos, icon: responsablesicon}, 
+        {id: 9, name: 'Tareas', trigger: navigateToTareas, icon: responsablesicon}, 
     ];
 
     function handleNavigateToReportesCatastral() {

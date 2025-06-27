@@ -1,0 +1,43 @@
+.dnd-task {
+    width: 95%;
+    min-height: 120px;
+    background-color: #9496A1;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    touch-action: none;
+    cursor: grab;
+    text-transform: capitalize;
+    &__title {
+        width: 100%;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        text-align: left;
+        font-weight: 400;
+    }
+    &__description {
+        width: 100%;
+        padding-top: 4px;
+        color: #fff;
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+        text-align: left;
+        font-weight: 200;
+    }
+}
+
+.dnd-task--active {
+    opacity: 0;
+}
+
+.dnd-task__title-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: #ececec;
+}

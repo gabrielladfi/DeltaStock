@@ -155,6 +155,11 @@ function GlobalProvider({ children }) {
   const [ openModalVerMasOAHistoriasListado, setOpenModalVerMasOAHistoriasListado ] = useState(false);
 
 
+  const [ newDeal, setNewDeal ] = useState(false);
+  const [ dataNewDeal, setDataNewDeal ] = useState({})
+  const [ openInfoProyecto, setOpenInfoProyecto ] = useState(false);
+
+
   return (
     <GlobalState.Provider value={{
       nuevaRadicacion,
@@ -271,7 +276,13 @@ function GlobalProvider({ children }) {
       otrasActuacionesHistoriaSeleccionada,
       setOtrasActuacionesHistoriaSeleccionada,
       openModalVerMasOAHistoriasListado,
-      setOpenModalVerMasOAHistoriasListado
+      setOpenModalVerMasOAHistoriasListado,
+      newDeal,
+      setNewDeal,
+      dataNewDeal,
+      setDataNewDeal,
+      openInfoProyecto,
+      setOpenInfoProyecto
 
     }}>
       {children}
